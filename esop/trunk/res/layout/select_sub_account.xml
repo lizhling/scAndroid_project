@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dialog_title_bar" />
+
+    <ImageView
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_up" 
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
+        />
+
+    <com.starcpt.cmuc.ui.view.widget.WheelView
+        android:id="@+id/sub_account_wheel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="4dip"
+        android:background="@color/white" />
+    
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/arrow_down" 
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/green_button_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="8dip"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_box_row_text_size" />
+
+</LinearLayout>

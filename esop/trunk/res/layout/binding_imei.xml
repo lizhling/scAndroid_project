@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+    <include
+    layout="@layout/dialog_title_bar" />
+		<!-- add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian Start-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="14dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+		
+		<TextView
+            android:id="@+id/phone_imei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_imsi"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+		<TextView
+            android:id="@+id/phone_imei_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+		<!-- add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian End-->
+
+        <TextView
+            android:id="@+id/password_input_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="@string/input_4a_accounts_for_binding"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:layout_marginBottom="12dip"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/accounts_4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_input"
+                android:completionThreshold="1"
+                android:gravity="top|left"
+                android:maxLines="2"
+                android:minLines="2"
+                android:padding="10dip"
+                android:hint="@string/use_char__seperate_accounts"
+                android:textColor="@color/login_text"
+                android:textSize="@dimen/login_box_row_text_size" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/image_secure_password_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/icon_correct"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+		<!-- add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian Start-->
+		<TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-20dip"
+            android:layout_gravity="left"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+         <TextView
+            android:id="@+id/login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/message_item_title_unop"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+		<!-- add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian End-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+			
+            <!--change the android:text
+             add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian -->
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="7dip"
+                android:background="@drawable/green_button_bg"
+                android:text="@string/commit_binding"
+                android:textColor="#444444"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnBACK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/green_button_bg"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/tab_bg_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-4px"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/pushmessage_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel_blue" >
+
+        <ListView
+            android:id="@+id/lv_messagelist"
+            style="@style/txtListTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/dark_gray"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none" />
+
+        <TextView
+            android:id="@+id/orderedBusinessesNoContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/noCotent"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_2" />
+    </FrameLayout>
+
+    <!--
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:listSelector="@drawable/about_china_moblie_logo"
+       android:transcriptMode="alwaysScroll"
+       android:scrollbarStyle="insideInset"
+       android:stackFromBottom="false"
+       android:fadingEdge="none"
+       android:fadeScrollbars="true" 
+       android:fadingEdgeLength="0.0dip" 
+       android:fastScrollEnabled="true" 
+       android:divider="@android:color/transparent"
+       android:dividerHeight="10dip"
+       android:background="@color/white"
+       android:cacheColorHint="#00000000"
+    -->
+
+</LinearLayout>

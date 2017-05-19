@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spin_1"
+        style="@style/CustomSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true" />
+
+    <Spinner
+        android:id="@+id/spin_2"
+        style="@style/CustomSpinner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true" />
+
+    <Spinner
+        android:id="@+id/spin_3"
+        style="@style/CustomSpinner"
+         android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:text="请输入手机号码或串号(二选一即可)"
+        android:textColor="#808080"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#cccccc" />
+
+    <EditText
+        android:id="@+id/phone_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:padding="15dip"
+        android:hint="手机号码"
+        android:textColor="#b4b4b4"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="15dip"
+        android:background="#cccccc" />
+
+    <EditText
+        android:id="@+id/imei_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="15dip"
+        android:hint="手机串号"
+        android:textColor="#b4b4b4"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="15dip"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/date_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:drawablePadding="@dimen/block_padding"
+        android:drawableRight="@drawable/selector_arrow_down"
+        android:gravity="center"
+        android:padding="@dimen/block_padding"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#cccccc" />
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:layout_marginRight="@dimen/block_margin"
+        android:background="#ffffff"
+        android:padding="15dip"
+        android:text="查询"
+        android:textSize="16sp" />
+
+</LinearLayout>

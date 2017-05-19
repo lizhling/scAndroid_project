@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 扣费提醒 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/tab_bg_with_shawdow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/deduct_expenses_alert"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_function_panel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/businessCharge"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/businessTariff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/takeEffectTime"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/takeEffectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即生效，取消次月1日生效"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/businessIntroduce"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/businessIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户通过短信、WAP、网站、10086、营业厅、客户经理等渠道订购增值业务后，系统将在计费前，通过10086端口奇偶向扣费号码发送扣费提醒短信。"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clickManageCertain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_btn"
+        android:text="@string/clickManage"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/warmNotice"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:id="@+id/textView_warmNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="1.客服热线：充值提示描述详情充值提示描述详情 2.充值范围：充值提示描述详情 3.充值提示描述详情充值提示描述详情充值提示描"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_3" />
+
+</LinearLayout>

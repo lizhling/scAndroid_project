@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="15dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.sunrise.marketingassistant.view.SignPanel
+            android:id="@+id/signPanel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="120dp"
+            android:minWidth="240dp" />
+
+        <ImageView
+            android:id="@+id/bt_recycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@android:drawable/ic_delete" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/white_dialog_spilator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_bg"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="提交"
+            android:textColor="#007aff"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_dialog_spilator" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_bg"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="取消"
+            android:textColor="#007aff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

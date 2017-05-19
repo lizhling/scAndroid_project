@@ -1,0 +1,28 @@
+[
+    {
+        "type": 0,
+        "content": "http://218.205.252.26:28081/scWyxAppManagePlatform/resources/businesspages/wyxMyRecord/index.html",
+        "zipContent":"http://218.205.252.26:28081/scWyxAppManagePlatform/resources/businesspages/wyxMyRecord.zip",
+        "iconNormalPath": "file:///android_asset/icon_recode.png",
+        "iconFocusPath": "file:///android_asset/icon_recode.png",
+        "iconOnclickPath": "file:///android_asset/icon_recode.png",
+        "tabName": "我的记录"
+    },
+    {
+        "type": 0,
+        "content": "http://218.205.252.26:28081/scWyxAppManagePlatform/resources/businesspages/wyxNumSearch/index.html",
+        "zipContent":"http://218.205.252.26:28081/scWyxAppManagePlatform/resources/businesspages/wyxNumSearch.zip",
+        "iconNormalPath": "file:///android_asset/icon_search.png",
+        "iconFocusPath": "file:///android_asset/icon_search.png",
+        "iconOnclickPath": "file:///android_asset/icon_search.png",
+        "tabName": "号码搜索"
+    },
+    {
+        "type": 1,
+        "content": "",
+        "iconNormalPath": "file:///android_asset/icon_business_deal.png",
+        "iconFocusPath": "file:///android_asset/icon_business_deal.png",
+        "iconOnclickPath": "file:///android_asset/icon_business_deal.png",
+        "tabName": "业务办理"
+    }
+]

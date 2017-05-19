@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.starcpt.cmuc"
+    android:versionCode="54"
+    android:versionName="5.4" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name=".CmucApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/cmuc_app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".ui.activity.PushMessageSettingActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainTabActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ActivityGroupPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BusinessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+              <intent-filter>
+                <action android:name="com.starcpt.cmuc.LOGIN" />
+                <category android:name="android.intent.category.DEFAULT"/>   
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SecurePasswordActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:windowSoftInputMode="stateVisible|adjustResize"
+                />
+         <activity android:name=".ui.activity.SecureOptionlActivity"
+              android:configChanges="orientation|keyboardHidden"
+               android:windowSoftInputMode="stateVisible|adjustResize"
+             />
+        <activity
+            android:name=".ui.skin.SkinSwitchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MessageListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MessageDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FeedBacksActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+         <activity
+     		android:name=".ui.activity.MultiwindowActivity"
+   			android:configChanges="keyboardHidden|orientation" 
+   			android:screenOrientation="portrait"
+   			/>
+           <activity
+     		android:name=".ui.activity.SearchBusinessActivity"
+   			android:configChanges="keyboardHidden|orientation" 
+   			android:screenOrientation="portrait"
+   			/>
+           
+         <activity
+            android:name=".ui.activity.BrowserActivity"
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.starcpt.cmuc.BROWSER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+         <activity 
+             android:name=".ui.activity.LockActivity"
+             android:configChanges="keyboardHidden|orientation"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.sunrise.javascript.utils.blutbooth.BluetoothAdapterActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.sunrise.javascript.utils.device.yingke.CameraActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name="com.sunrise.javascript.utils.device.GestureActivity" />
+        <activity
+            android:name="com.sunrise.javascript.utils.device.yingke.NativeCameraActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.sunrise.javascript.activity.CaptureImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name="com.sunrise.javascript.activity.IDCardImageActivity"
+			 android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.sunrise.javascript.activity.MipcaCaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <provider
+            android:name=".db.CmucProvider"
+            android:authorities="com.starcpt.cumc.db.CmucProvider" />
+
+        <service
+            android:name="org.androidpn.client.PushMessageService"
+            android:enabled="true"
+            android:label="PushMessageService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.PushMessageService" />
+            </intent-filter>
+        </service>
+         <service android:name=".service.DownApkService"/>
+         <service android:name=".service.DownSkinService"/>
+         <service android:name="com.starcpt.cmuc.service.LockScreenService"/>
+         <service android:name="com.sunrise.javascript.activity.DownLoadService"/>
+
+        <meta-data
+            android:name="appTag"
+            android:value="ALL" />
+        
+        <meta-data
+            android:name="support_third_party_device"
+            android:value="support"/>
+        
+        <!-- <meta-data
+            android:name="third_parth_device_type"
+            android:value="SUNNADA"/>
+        
+        <meta-data
+            android:name="third_parth_device_screen_direction"
+            android:value="portrait"/> -->
+
+        <activity android:name=".ui.activity.GuideActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+       <activity android:name="com.sunrise.javascript.activity.TakePictureActivity"
+		android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask"
+		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+		android:screenOrientation="landscape"/>
+       <activity android:name="com.sunrise.javascript.activity.IDCard10085Activity"
+        android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+
+    <uses-permission android:name="com.asiainfo.cm10085.IDENTITY_AUTHENTICATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> 
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+</manifest>

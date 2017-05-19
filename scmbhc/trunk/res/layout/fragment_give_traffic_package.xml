@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/businessHandle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_green"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/giveNumber"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bt_bg_phonenum"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/editText_phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/inputNumberForCallTransferHint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:minHeight="40px"
+                    android:padding="5dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/button_addressList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_contacks"
+                    android:gravity="center"
+                    android:text="@string/QueryAddressList"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/givePackage"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_1" />
+
+            <Spinner
+                android:id="@+id/spinner_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/arrow_down"
+                android:text="@string/choosePlease" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/giveDuration"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_1" />
+
+            <Spinner
+                android:id="@+id/spinner_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/arrow_down"
+                android:entries="@array/giveAsGiftDuration"
+                android:text="@string/choosePlease" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/businessIntroduce"
+                android:textSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/businessIntroduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="赠送指定用户指定套餐流量包，费用从此登录用户账户扣除。可以指定赠送时长。" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_giveCertain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bg_btn"
+            android:padding="10dp"
+            android:text="@string/giveCertain"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/warmNotice"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/textView_warmNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="计费说明：不区分全/半月，不足一月按天折算收取，套餐月流量封顶值15G，套餐月费用（含套餐费及国内流量费）封顶值500元"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+</ScrollView>

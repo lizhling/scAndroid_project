@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="feedback_template_list">
+        <item>模版1</item>
+        <item>模版2</item>
+    </string-array>
+    <string-array name="feedback_template_content">
+        <item>总有那么一点蛋蛋的忧桑</item>
+        <item>没那么简单\n我总会知道这是怎么回事！</item>
+    </string-array>
+    <string-array name="target_types">
+        <item>宽带</item>
+        <item>4G</item>
+        <item>新增</item>
+        <item>实名</item>
+    </string-array>
+    <string-array name="sichuan_city_name_for_offline_map">
+        <item>四川省（全省）</item>
+        <item>阿坝藏族羌族自治州</item>
+        <item>巴中市</item>
+        <item>成都市</item>
+        <item>达州市</item>
+        <item>德阳市</item>
+        <item>甘孜藏族自治州</item>
+        <item>广安市</item>
+        <item>广元市</item>
+        <item>乐山市</item>
+        <item>凉山彝族自治州</item>
+        <item>泸州市</item>
+        <item>眉山市</item>
+        <item>绵阳市</item>
+        <item>南充市</item>
+        <item>内江市</item>
+        <item>攀枝花市</item>
+        <item>遂宁市</item>
+        <item>雅安市</item>
+        <item>宜宾市</item>
+        <item>自贡市</item>
+        <item>资阳市</item>
+    </string-array>
+    <string-array name="starLevelNames">
+        <item>无限制</item>
+        <item>一星级</item>
+        <item>二星级</item>
+        <item>三星级</item>
+        <item>四星级</item>
+        <item>五星级</item>
+        <item>动感地带品牌店</item>
+        <item>六星级</item>
+    </string-array>
+    <string-array name="channelTypeNames">
+        <item>无限制</item>
+        <item>区域机构</item>
+        <item>营业厅</item>
+        <item>实体渠道</item>
+        <item>代办员</item>
+        <item>其他渠道</item>
+        <item>其他不明类型渠道</item>
+        <item>代理店</item>
+        <item>大卖场</item>
+        <item>银行</item>
+        <item>邮政</item>
+    </string-array>
+    <string-array name="channelTypeValues">
+        <item>000</item>
+        <item>200</item>
+        <item>4100</item>
+        <item>400</item>
+        <item>500</item>
+        <item>700</item>
+        <item>7100</item>
+        <item>4200</item>
+        <item>4300</item>
+        <item>4400</item>
+        <item>4500</item>
+    </string-array>
+    <string-array name="indexsortName">
+        <item>无</item>
+        <item>4g资费新增</item>
+        <item>4g终端销量</item>
+        <item>宽带发展量</item>
+    </string-array>
+    <string-array name="indexsortValue">
+        <item>null</item>
+        <item>G4_TARIFF_ADD</item>
+        <item>G4_TERM_SALES</item>
+        <item>BROADBAND_NUMS</item>
+    </string-array>
+    <string-array name="competitorChannelType">
+        <item>中国电信</item>
+        <item>中国联通</item>
+        <item>其它渠道</item>
+    </string-array>
+    <string-array name="namesOfChannelType">
+        <item>移动</item>
+        <item>联通</item>
+        <item>电信</item>
+    </string-array>
+    <string-array name="statesOfOfflineMapElement">
+        <item>未定义</item>
+        <item>下载中</item>
+        <item>等待中</item>
+        <item>暂停中</item>
+        <item>已下载</item>
+        <item>校验失败</item>
+        <item>网络异常</item>
+        <item>读写异常</item>
+        <item>wifi网络异常</item>
+        <item>数据错误，需重新下载</item>
+        <item>离线包正在导入中</item>
+    </string-array>
+
+</resources>

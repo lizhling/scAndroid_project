@@ -1,0 +1,180 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppBaseTheme" parent="android:style/Theme.Light.NoTitleBar">
+		
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppLoadingTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/start_image</item>
+    </style>
+
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@color/black</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <!-- <item name="android:listSelector">@drawable/list_item_bg</item> -->
+    </style>
+
+    <style name="normal_radiobutton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/selector_radiobutton</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="radiobutton_as_spinneritem">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/selector_tab_item_right_check</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@android:color/black </item>
+    </style>
+
+    <style name="radiobutton_businesslist">
+        <item name="android:background">@drawable/selector_bg_businesslist_radio</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="tab_bg_with_shawdow">
+        <item name="android:background">@drawable/bg_tab_yellowgreen</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:minWidth">163px</item>
+    </style>
+
+    <style name="tab_bg_light_blue">
+        <item name="android:background">@drawable/bg_tab_light_blue</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:minWidth">163px</item>
+    </style>
+
+    <style name="tab_bg_blue">
+        <item name="android:background">@drawable/bg_tab_blue</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:minWidth">163px</item>
+    </style>
+
+    <style name="tab_bg_light_red">
+        <item name="android:background">@drawable/bg_tab_light_red</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:minWidth">163px</item>
+    </style>
+
+    <style name="exchange_button_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_bg_business_open</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="sliding_menu_item_panel_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+    </style>
+
+    <style name="sliding_menu_item_text_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/text_color_dark_gray</item>
+    </style>
+
+    <style name="sliding_menu_item_text_bt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+    </style>
+
+    <style name="sliding_menu_item_text_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sliding_menu_item_text_value_no_bt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sliding_menu_item_progress_bar_panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sliding_menu_item_progress_bar_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+        <item name="android:textColor">@color/text_color_dark_gray</item>
+    </style>
+
+    <style name="twoButtonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+ 		<!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+ 		<!-- 是否浮现在activity之上 -->
+    </style>
+
+    <style name="txtListTittle">
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+    	android:paddingRight="10dp" >
+
+        <TextView
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4px"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="@string/commFunction"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <ListView
+            android:id="@+id/listView_commFunction"
+            android:layout_width="match_parent"
+            style="@style/txtListTittle"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_green"
+            android:divider="@color/dark_gray"
+            android:dividerHeight="1dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:entries="@array/moreFunctionOther"
+             />
+
+        <TextView
+            style="@style/tab_bg_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/otherFunction"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <ListView
+            android:id="@+id/listView_other"
+            android:layout_width="match_parent"
+            style="@style/txtListTittle"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_blue"
+            android:divider="@color/dark_gray"
+            android:dividerHeight="1dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:entries="@array/moreFunctionOther"/>
+    </LinearLayout>
+
+</ScrollView>

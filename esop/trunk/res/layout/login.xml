@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubbleEditText="http://schemas.android.com/apk/res/com.starcpt.cmuc"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/login_tob_panel"
+        layout="@layout/top_title"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/login_logo_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_logo" />
+
+        <ImageView
+            android:id="@+id/splash_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cmuc_start_name" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/splash_app_name_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_esop_app_name"
+            android:textColor="#d5f1ff"
+            android:textScaleX="0.9"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/login_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_title"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/login_user_name_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.starcpt.cmuc.ui.view.BubbleEditText
+                    android:id="@+id/login_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/login_input"
+                    android:completionThreshold="1"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:drawableRight="@drawable/user_name_icon"
+                    android:gravity="left|center"
+                    android:hint="@string/user_name_label"
+                    android:padding="8dip"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/login_text"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/login_box_row_text_size"
+                    bubbleEditText:textMaxLength="20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/password_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <com.starcpt.cmuc.ui.view.BubbleEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/login_input"
+                    android:drawableRight="@drawable/password_icon"
+                    android:gravity="left|center"
+                    android:hint="@string/password_label"
+                    android:padding="8dip"
+                    android:password="true"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/login_text"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/login_box_row_text_size"
+                    bubbleEditText:textMaxLength="20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/get_auth_code_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1.0" >
+
+                <Button
+                    android:id="@+id/get_auth_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/grey_button_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="@string/get_auth_code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/login_box_row_text_size" />
+
+                <com.starcpt.cmuc.ui.view.BubbleEditText
+                    android:id="@+id/oper_auth_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/login_input"
+                    android:drawableRight="@drawable/password_icon"
+                    android:gravity="left|center"
+                    android:padding="8dip"
+                    android:phoneNumber="true"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/login_text"
+                    android:textSize="@dimen/login_box_row_text_size"
+                    bubbleEditText:textMaxLength="6" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_box"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/green_button_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="8dip"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_box_row_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/login_anima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/splash_loading_progress_bar"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/message_item_title_unop"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <ImageView
+            android:id="@+id/friends_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/friends_share" />
+
+        <TextView
+            android:id="@+id/version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/friends_share"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/friends_share"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/identity_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="@string/identity_verification"
+            android:textColor="#ff988A14"
+            android:gravity="right"
+            android:layout_toRightOf="@id/friends_share"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/imie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ff006aca" />
+
+        <TextView
+            android:id="@+id/binding_imie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/request_binding"
+            android:textColor="#ff006aca" />
+    </RelativeLayout>
+
+</LinearLayout>

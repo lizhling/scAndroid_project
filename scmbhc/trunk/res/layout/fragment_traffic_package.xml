@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 流量包 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/block_padding" >
+
+        <TextView
+            android:id="@+id/tab_baseTrafficPackage"
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/baseTrafficPackage"
+            android:textColor="@android:color/white" />
+
+        <ListView
+            android:id="@+id/listView_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_green"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:minHeight="100dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tab_overlayTrafficPackage"
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_tab_light_blue"
+            android:text="@string/superpositionTrafficPackage"
+            android:textColor="@android:color/white" />
+
+        <ListView
+            android:id="@+id/listView_superposition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_blue"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <TextView
+             android:id="@+id/tab_idleTrafficPackage"
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_tab_red"
+            android:text="@string/leisureTrafficPackage"
+            android:textColor="@android:color/white" />
+
+        <ListView
+            android:id="@+id/listView_leisure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_red"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <Button
+            android:id="@+id/button_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bg_btn"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:text="@string/cmTrafficPackageGiveAsGift"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>

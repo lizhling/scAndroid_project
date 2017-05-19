@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.starcpt.cmuc">
+
+    <include
+        layout="@layout/dialog_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" 
+            android:padding="10dip"
+            >
+            <EditText
+                android:id="@+id/bookmark_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input"
+                android:gravity="left|center"
+                android:hint="@string/bookmark_name"
+                android:padding="8dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/login_text"
+                android:textSize="@dimen/login_box_row_text_size" />
+            
+             <EditText
+                android:id="@+id/bookmark_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/login_input"
+                android:gravity="left|center"
+                android:hint="@string/book_url"
+                android:padding="8dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/login_text"
+                android:textSize="@dimen/login_box_row_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/green_button_bg"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/grey_button_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

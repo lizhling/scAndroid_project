@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fastTopUp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:minLines="2"
+                android:text="@string/please"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:minLines="2"
+                android:text="@string/login"
+                android:textColor="@color/bg_color_light_blue"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tag_see_balace"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_function_panel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bt_bg_phonenum"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/editText_phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/inputOrSelectPhoneNum2Topup"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:minHeight="30dp"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_2" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/button_addressList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/ic_contacts" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rmb30"
+                    style="@style/normal_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="30元"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rmb50"
+                    style="@style/normal_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="50元"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rmb100"
+                    style="@style/normal_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="100元"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rmb200"
+                    style="@style/normal_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="200元"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/topUpAmount"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <EditText
+                android:id="@+id/editText_topupAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bt_bg_phonenum"
+                android:gravity="right"
+                android:hint="0"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:minWidth="30dp"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/notice_10_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_size_1"
+                android:text="@string/topupNotice10times"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/payAmount"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/textView_rates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView_payAmount"
+                android:background="@drawable/bg_discount"
+                android:text="9.85折"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_4" />
+
+            <TextView
+                android:id="@+id/textView_payAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text1"
+                android:layout_alignBottom="@+id/text1"
+                android:layout_toRightOf="@+id/text1"
+                android:text="0.00元"
+                android:textColor="#ff0083d1"
+                android:textSize="@dimen/text_size_2" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_payCertain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/block_margin"
+            android:background="@drawable/selector_bg_btn"
+            android:text="@string/clickPay"
+            android:textColor="@color/selector_click_white_grey"
+            android:textSize="@dimen/text_size_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="@dimen/block_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_query"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_2" />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topupHistory"
+            android:textColor="@color/bg_color_yellow_green"
+            android:textSize="@dimen/text_size_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/block_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/warmNotice"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_2" />
+
+        <TextView
+            android:id="@+id/textView_warmNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1.客服热线：充值提示描述详情充值提示描述详情 \n2.充值范围：充值提示描述详情 \n3.充值提示描述详情充值提示描述详情充值提示描"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_2" />
+    </LinearLayout>
+
+</LinearLayout>

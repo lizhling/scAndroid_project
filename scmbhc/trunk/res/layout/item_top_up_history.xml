@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/block_padding" >
+
+    <TextView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="充值渠道"
+        android:maxWidth="160dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="充值金额"
+        android:textColor="@color/bg_color_yellow_green"
+        android:textScaleX="0.8"
+        android:textSize="@dimen/text_size_1" />
+
+    <TextView
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="充值时间\n123"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_3" />
+
+</TableRow>

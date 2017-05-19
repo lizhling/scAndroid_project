@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_2" />
+
+    <Button
+        android:id="@+id/openUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/selector_bg_business_open"
+        android:text="@string/openUp"
+        android:textColor="@color/selector_bt_open_blue_white"
+        android:textSize="@dimen/text_size_2" />
+
+    <Button
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/selector_bg_business_detail"
+        android:text="@string/details"
+        android:textColor="@color/selector_bt_detail_green_white"
+        android:textSize="@dimen/text_size_2" />
+
+</LinearLayout>

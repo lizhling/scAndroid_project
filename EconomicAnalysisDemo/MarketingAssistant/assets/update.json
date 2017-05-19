@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "type": 1,
+            "downloadUrl": "http://218.205.252.26:18098/scUnifiedAppManagePlatform/resources/uploadtemp/MarketingAssistant.apk",
+            "updateType": 2,
+            "updateDescription": "升级描述",
+            "newVersionName": "1.0",
+            "newVersionCode": 1
+        },
+        {
+            "type": 2,
+            "downloadUrl": "http://218.205.252.26:18098/scUnifiedAppManagePlatform/resources/uploadtemp/tabInfo.json",
+            "newVersionCode": 1449641652218
+        },
+        {
+            "type": 10,
+            "newVersionCode": 200
+        },
+        {
+            "type": 3,
+            "downloadUrl": "http://218.205.252.26:18098/scUnifiedAppManagePlatform/resources/uploadtemp/common_res.zip",
+            "newVersionCode": 20151228
+        }
+    ]
+}

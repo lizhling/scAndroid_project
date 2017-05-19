@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.sunrise.scmbhc.ui.view.AdGallery
+        android:id="@+id/gallerypop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:fadingEdge="none"
+        android:unselectedAlpha="1" />
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_alignBottom="@id/gallerypop">
+        <RadioGroup
+            android:id="@+id/home_pop_gallery_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:background="@drawable/gallery_select_bg"
+
+            >
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

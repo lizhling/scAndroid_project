@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_dialog_bg">
+
+    
+     <TextView
+         android:id="@+id/dialog_message"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:layout_marginLeft="10dip"
+         android:textSize="@dimen/text_size_1"
+         android:text="@string/support_version_name"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/white_dialog_spilator"/>
+    
+    
+</LinearLayout>

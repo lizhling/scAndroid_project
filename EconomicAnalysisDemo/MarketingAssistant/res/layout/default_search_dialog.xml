@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dip"
+    android:layout_height="180dip"
+    android:background="@drawable/shape_white_bg"
+    android:weightSum="1"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_1"
+            android:text="查询网点信息"
+            android:gravity="center"
+            android:background="#1572b3"
+             />
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="200"
+            android:maxLines="4" 
+            android:textSize="@dimen/text_size_1"
+            android:hint="请输入网点名称"
+            android:layout_margin="15dip"
+            />
+        <Button 
+             android:id="@+id/dialog_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始查询"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="15dip"
+            android:background="@drawable/button_shape"
+            />
+
+</LinearLayout>

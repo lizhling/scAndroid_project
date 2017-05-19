@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_button_bg_selected">#d9d9d9</color>
+    <color name="white_dialog_spilator">#bbbbbb</color>
+    <color name="text_color_grey_80">#808080</color>
+    <color name="text_color_grey_9c">#9c9c9c</color>
+    <color name="text_color_black_33">#333333</color>
+    <color name="diliver_d4">#d4d4d4</color>
+    <color name="bg_white_f2">#f2f2f2</color>
+    <color name="bule_87d0">#0087d0</color>
+    <color name="bottom_click">#0a334f</color>
+    <color name="bottom_unclick">#0087d0</color>
+     <color name="white">#000000</color>
+</resources>

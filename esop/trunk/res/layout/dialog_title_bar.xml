@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    <RelativeLayout 
+        android:id="@+id/dialog_title_bar"
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialog_title_bar">	
+        
+        <!-- 
+        change android:layout_marginLeft="15dip"
+        add for request id RA-IR-0018: 优化imei号绑定流程  by liuyitian -->
+	    <TextView
+	        android:id="@+id/tvTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="15dip"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:text="@string/dialog_default_title"
+	        android:textColor="@color/white"
+	        android:textSize="22sp" />
+	    <Button
+            android:id="@+id/dialog_feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_feedback"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:paddingTop="6dip"
+            android:paddingBottom="6dip"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/light_grey_button_bg" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sunrise.scmbhc.ui.view.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/home_sliding_menu" />
+
+    <com.sunrise.scmbhc.ui.view.CustomTabHost
+        android:id="@android:id/tabhost"
+        android:tag="CustomTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:background="#ffffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:gravity="center" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.0"
+                android:background="#00ffffff" />
+
+            <com.sunrise.scmbhc.ui.view.MyTab
+                android:id="@+id/bottom_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_bottom_bg"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </com.sunrise.scmbhc.ui.view.CustomTabHost>
+
+</com.sunrise.scmbhc.ui.view.SlidingPaneLayout>

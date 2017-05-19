@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_menubar"
+    android:padding="@dimen/seperate_tiny" >
+
+    <ImageView
+        android:id="@+id/imageView_qxzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_qxzc" />
+
+    <ImageView
+        android:id="@+id/imageView_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_channel" />
+
+    <ImageView
+        android:id="@+id/imageView_indicatortool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_indicatortool" />
+
+    <ImageView
+        android:id="@+id/imageView_marketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_marketing" />
+
+    <ImageView
+        android:id="@+id/imageView_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_client" />
+
+    <ImageView
+        android:id="@+id/imageView_yyjkzx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_yyjkzx" />
+
+</LinearLayout>

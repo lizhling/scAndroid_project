@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/block_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店铺员工数:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/hall_numOfEmployees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/block_margin"
+                android:layout_weight="1"
+                android:text="0人"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@drawable/white_dialog_spilator" />
+
+        <TableLayout
+            android:id="@+id/table_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/diliver_d4"
+            android:visibility="gone" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/block_padding" >
+
+                <TextView
+                    style="@style/tableItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="员工号"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tableItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tableItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前积分"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tableItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总积分"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@drawable/white_dialog_spilator" />
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@drawable/white_dialog_spilator" />
+
+        <LinearLayout
+            android:id="@+id/container_pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/block_padding" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/block_padding"
+                android:text="渠道份额详情"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/block_padding"
+                android:text="无"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@drawable/white_dialog_spilator" />
+
+        <LinearLayout
+            android:id="@+id/container_rwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/block_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/block_padding5"
+                android:paddingTop="@dimen/block_padding5" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="近三月酬金信息"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/rwd_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/selector_remuneration"
+                    android:drawablePadding="@dimen/block_margin"
+                    android:gravity="center"
+                    android:text="酬金详情"
+                    android:textColor="@color/text_color_black_33"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/block_padding"
+                android:text="无"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@drawable/white_dialog_spilator" />
+    </LinearLayout>
+
+</ScrollView>

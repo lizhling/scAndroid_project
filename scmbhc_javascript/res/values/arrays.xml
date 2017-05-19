@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="people_id">
+    <item>姓  名：   </item>
+    <item>性别：  </item>
+    <item>生日：  </item>
+    <item>名族：  </item>
+    <item>地址：  </item>
+    <item>身份证号：  </item>
+    </string-array>
+</resources>

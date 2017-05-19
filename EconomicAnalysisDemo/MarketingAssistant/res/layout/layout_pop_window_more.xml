@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#465058"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/btn_pick_message"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_menu_view"
+        android:text="信息采集" />
+
+    <TextView
+        android:id="@+id/btn_share"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_menu_share"
+        android:text="分享" />
+
+    <TextView
+        android:id="@+id/btn_history"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_menu_recent_history"
+        android:text="历史记录" />
+
+    <TextView
+        android:id="@+id/btn_offlineMap"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_dialog_map"
+        android:text="离线地图"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/btn_about"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_menu_info_details"
+        android:text="关于" />
+
+    <TextView
+        android:id="@+id/btn_exit"
+        style="@style/radioHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_lock_power_off"
+        android:text="退出" />
+
+</LinearLayout>

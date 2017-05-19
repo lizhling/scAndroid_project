@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_f2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/part_head_bar" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/block_margin"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/diliver_d4" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/block_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/block_margin"
+                android:text="4A工号"
+                android:textColor="@color/text_color_grey_9c"
+                android:textSize="@dimen/text_size_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:maxLength="30"
+                    android:nextFocusDown="@+id/editText_password"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/btn_delete1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/presence_offline"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/diliver_d4" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/block_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/block_margin"
+                android:text="密码"
+                android:textColor="@color/text_color_grey_9c"
+                android:textSize="@dimen/text_size_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:maxLength="100"
+                    android:nextFocusDown="@id/editText_phoneNumber"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/btn_delete2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/presence_offline"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/diliver_d4" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/block_margin"
+                android:paddingLeft="@dimen/block_padding"
+                android:text="验证码"
+                android:textColor="@color/text_color_grey_9c"
+                android:textSize="@dimen/text_size_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editText_checkcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:nextFocusDown="@id/editText_phoneNumber"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/btn_delete3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/presence_offline"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textCheckCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/block_margin"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:padding="@dimen/block_padding"
+                    android:text="获取验证码"
+                    android:textColor="@color/text_color_black_33"
+                    android:textSize="@dimen/text_size_1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_autoLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动登录"
+                    android:textColor="@color/text_color_grey_9c"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/diliver_d4" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/block_margin"
+        android:layout_marginLeft="@dimen/block_margin"
+        android:layout_marginRight="@dimen/block_margin"
+        android:layout_marginTop="@dimen/block_margin30"
+        android:background="@drawable/button_style"
+        android:padding="@dimen/block_padding"
+        android:text="@string/login"
+        android:textColor="@color/text_color_black_33"
+        android:textSize="@dimen/text_size_1" />
+
+    <ImageView
+        android:id="@+id/imageView_twodimensioncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/block_padding"
+        android:paddingLeft="2dp"
+        android:paddingTop="@dimen/block_padding"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:textColor="#0085d0"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/textView_wether"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/weather"
+                android:src="@drawable/ic_fog" />
+
+            <TextView
+                android:id="@+id/textView_tempRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_wether"
+                android:layout_marginLeft="2dp"
+                android:textColor="#aa686868" />
+
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_tempRange"
+                android:layout_marginLeft="2dp"
+                android:textColor="#aa686868"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/block_margin"
+            android:layout_marginRight="@dimen/block_margin"
+            android:background="#cccccc" />
+
+        <GridView
+            android:id="@+id/list_weatherForecase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="false"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:gravity="center"
+            android:padding="@dimen/block_padding"
+            android:shadowColor="@android:color/darker_gray"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="@string/share"
+            android:textColor="@color/text_color_grey_9c"
+            android:textSize="@dimen/text_size_1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道编码"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <TextView
+                        android:id="@+id/code_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/edit_text"
+                        android:text="由系统自动生成"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道名称"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/name_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入渠道名称"
+                        android:paddingLeft="@dimen/block_padding5"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道类型"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <Spinner
+                        android:id="@+id/spinner_channelType"
+                        style="@style/CustomSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/competitorChannelType"
+                        android:paddingLeft="@dimen/block_padding5"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大厅面积"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/size_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入营业厅面积"
+                        android:paddingLeft="@dimen/block_padding5"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:text="位置属性"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/location_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="请输入地理位置属性"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="台席数量"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/num_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入台席数量"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:text="雇员人数"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/people_num_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入营业厅人数"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中心归属"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/bussiness_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入营销中心归属"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@drawable/white_dialog_spilator" />
+
+            <Button
+                android:id="@+id/location_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/block_margin"
+                android:background="@drawable/button_style"
+                android:drawableLeft="@android:drawable/ic_menu_compass"
+                android:text="定位"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@drawable/white_dialog_spilator" />
+            <Button
+                android:id="@+id/upload_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/block_margin"
+                android:background="@drawable/button_style"
+                android:drawableLeft="@android:drawable/ic_menu_compass"
+                android:text="上传照片"
+                android:textSize="@dimen/text_size_2" />
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@drawable/white_dialog_spilator" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经度"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/longitude_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入经度"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纬度"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/latitude_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入纬度"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/white_dialog_spilator" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/block_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <EditText
+                        android:id="@+id/address_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入详细地址"
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:minLines="3"
+                        android:textSize="@dimen/text_size_2" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/white_dialog_spilator" />
+
+    <LinearLayout
+        android:id="@+id/operateBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/block_padding5" >
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="删除网点" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="清除数据" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>

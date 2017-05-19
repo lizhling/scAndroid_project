@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="74dp"
+                android:background="@drawable/gray_stroke_shape_bg"
+                android:padding="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/hall_icon" />
+
+            <LinearLayout
+                android:id="@+id/wait_people_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/blue_shape_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_current_wait"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/wait_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/man"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/no_waitpeople_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/blue_shape_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="5dip"
+                android:visibility="gone"
+                android:paddingRight="5dip" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nowaitpeople"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hall_name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:gravity="right"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hall_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/view_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/address_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/view_map"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

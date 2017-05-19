@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color  name="listDivider">#ff4784d3</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="phone_color">#ff363535</color>
+    <color name="choice_phone_color">#2392f1</color>
+    <color name="blue">#ff0046c6</color>
+    <color name="light_blue">#ff2588d1</color>
+    <color name="gray">#ffb0b0b0</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="silver">#c0c0c0</color>
+</resources>

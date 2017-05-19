@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AndroidJavaScriptActivity!</string>
+    <string name="app_name">AndroidJavaScript</string>
+    <string name="send_sccuess">信息发送成功</string>
+    <string name="send_gene_error">一般的信息发送错误</string>
+    <string name="send_gene_radio_off_error">无线网络被关闭</string>
+    <string name="send_gene_noing_content_error">短信没有写入内容</string>
+    <string name="get_location_timeout_error">获取位置信息超时</string>
+    <string name="get_location_gps_not_open_error">GPS没有打开</string>
+    <string name="get_location_lac_cellid_error">无网络或SIM卡不存在</string>
+      
+    <!-- Bluetooth -->
+    <string name="bluebooth_be_not_enabel">蓝牙没有启动</string>	
+	<string name="bounded">已配对</string>
+    <string name="bounding">正在配对</string>
+    <string name="none_bound">未配对</string>  
+    <string name="bonding_please_wait">正在配对，请等待</string>
+    <string name="cong_xing_devices">从兴外部设备</string>
+    <string name="ren_ying_ke_ji_devices">仁盈科技外部设备</string>
+    <string name="button_scan">扫描查找设备</string>
+    <string name="scaning_bluetooth_device">正在扫描设备,请稍后。。。</string>
+    <string name="select_bluetooth_device">请选择一个设备，完成业务</string>
+     <string name="no_bunded_device">未扫描到配对设备，请配对你要使用的设备</string>
+    <string name="has_connected">已经连接到:</string>
+    <string name="connect_error_retry">设备连接已失败，请检查连接后重试</string>
+    <string name="connecting">正在连接蓝牙设备，请稍后。。。</string>
+    <string name="bluetooth_connect_error">蓝牙连接错误！</string>
+
+    <!-- common -->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="english_cancle">cancle</string>
+    <string name="english_error">error</string>
+      
+    <!-- camera -->
+     <string name="can_not_analysis_imgage">不能识别，请获取更清晰的图像</string>
+    <string name="analysising_imgage">正在识别</string>
+    <string name="analysising_imgage_message">正在识别 身份证图像，请稍候。。。</string>
+    <string name="loading_identification_card_message">正在读取 身份证，请稍候。。。</string>
+    <string name="writeing_sim_card_message">正在写入手机卡信息，请稍候。。。</string>
+    <string name="save_photo_success">保存照片成功</string>
+    <string name="take_photo">拍  照</string>
+	<string name="re_take_photo">重  拍</string>
+	<string name="save_photo">保存照片</string>
+	<string name="re_shibie">重新识别</string>
+	<string name="btn_exit_camera">退  出</string>
+    <string name="review_retake">"重拍"</string>
+    
+    <string name="txt_remark">"请把身份证的成像置入绿色框内,并与绿色边框四周对齐!"</string>
+    <string name="please_inser_sd">请插入SD卡后再试！</string>
+    <string name="printing_title">正在打印</string>
+    <string name="printing_message">正在为您打印，请稍候。。。</string>
+    <string name="reading_sd_card_title">正在读卡</string>
+    <string name="reading_sd_card_message">正在为您读卡，请稍候。。。</string>
+    <string name="device_can_not_support_function">很抱歉，设备现在不支持此功能</string>
+    <string name="asyns_pic_result">识别结果：</string>
+    <string name="camera_indicator">请将身份证放入框内后拍照！</string>
+    <string name="camera_open_error">相机未正常开启，请重启手机后重试！</string>
+    <string name="camera_take_picture_error">拍照失败，请重试。。。</string>
+    <string name="reading_ps2_code">正在读取二维码，请稍候……</string>
+    
+    <!-- capture image -->
+    <string name="capture_image_failed">获取照片失败，请重试</string>
+    <string name="processing_imgage_message">正在处理图片，请稍后。。。</string>
+</resources>
+ 

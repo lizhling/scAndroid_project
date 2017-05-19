@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="seperate_tiny">3dp</dimen>
+    <dimen name="seperate_small">7dp</dimen>
+    <dimen name="seperate_mid">10dp</dimen>
+    <dimen name="seperate_large">20dp</dimen>
+    <dimen name="seperate_huge">30dp</dimen>
+    <dimen name="textsize_large">25sp</dimen>
+    <dimen name="textsize_mid">20sp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+    <dimen name="textsize_tiny">12sp</dimen>
+
+</resources>

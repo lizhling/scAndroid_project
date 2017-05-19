@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">实时经分</string>
+    <string name="latest_version_name">最新版本</string>
+    <string name="support_version_name">支持版本</string>
+    <string name="app_copyright">中国移动通信集团四川有限公司</string>
+
+    <!-- commonly -->
+    <string name="returntxt">返回</string>
+
+    <!-- network setting -->
+    <string name="set_network">设置网络</string>
+    <string name="network_error">网络错误，请检查网络设置。错误ID=40</string>
+    <string name="frame_loading_fail">数据加载失败，\n请检查当前网络接连或稍后再试!</string>
+    <string name="load_web_fail">页面加载失败，\n请检查当前网络接连或稍后再试!</string>
+    <string name="share">分享</string>
+    <string name="apk_download_fail">安装包下载失败</string>
+    <string name="latest_apk_downloading">最新安装程序下载中</string>
+    <string name="later_say">以后再说</string>
+    <string name="update_now">立即升级</string>
+    <string name="exitApp">退出程序</string>
+
+</resources>

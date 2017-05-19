@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <include layout="@layout/top_title" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="@color/blue" android:text="此处是指定业务界面" 
+				android:textSize="18sp" 
+				android:layout_gravity="center_vertical|center_horizontal"/>
+			</LinearLayout>
+			<include android:id="@+id/load_page" layout="@layout/load_page" />
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

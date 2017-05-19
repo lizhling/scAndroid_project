@@ -1,0 +1,244 @@
+{
+    "datas": [
+        {
+            "id": 20,
+            "title": "话费直充",
+            "exchangeType": 1,
+            "parentId": 1
+        },
+        {
+            "id": 21,
+            "title": "数据流量包",
+            "exchangeType": 1,
+            "parentId": 1
+        },
+        {
+            "id": 45,
+            "title": "流量加油包",
+            "exchangeType": 1,
+            "parentId": 1
+        },
+        {
+            "id": 40,
+            "title": "电子券",
+            "exchangeType": 2,
+            "parentId": 1
+        },
+        {
+            "id": 22,
+            "title": "30元话费充值",
+            "credits": 2500,
+            "exchangeType": 1,
+            "equalScor": "HF30",
+            "parentId": 20
+        },
+        {
+            "id": 47,
+            "title": "50元话费直充",
+            "credits": 4170,
+            "exchangeType": 1,
+            "equalScor": "HF50",
+            "parentId": 20
+        },
+        {
+            "id": 48,
+            "title": "100元话费直充",
+            "credits": 8340,
+            "exchangeType": 1,
+            "equalScor": "HF100",
+            "parentId": 20
+        },
+        {
+            "id": 49,
+            "title": "300元话费直充",
+            "credits": 25000,
+            "exchangeType": 1,
+            "equalScor": "HF300",
+            "parentId": 20
+        },
+        {
+            "id": 50,
+            "title": "500元话费直充",
+            "credits": 41670,
+            "exchangeType": 1,
+            "equalScor": "HF500",
+            "parentId": 20
+        },
+        {
+            "id": 23,
+            "title": "5元30M数据流量包",
+            "credits": 357,
+            "exchangeType": 1,
+            "equalScor": "LL30",
+            "parentId": 21
+        },
+        {
+            "id": 51,
+            "title": "10元 70M数据流量包",
+            "credits": 714,
+            "exchangeType": 1,
+            "equalScor": "LL70",
+            "parentId": 21
+        },
+        {
+            "id": 52,
+            "title": "20元 150M数据流量包",
+            "credits": 1420,
+            "exchangeType": 1,
+            "equalScor": "LL150",
+            "parentId": 21
+        },
+        {
+            "id": 53,
+            "title": "30元 500M数据流量包",
+            "credits": 2125,
+            "exchangeType": 1,
+            "equalScor": "LL500",
+            "parentId": 21
+        },
+        {
+            "id": 54,
+            "title": "40元 700M数据流量包",
+            "credits": 2839,
+            "exchangeType": 1,
+            "equalScor": "LL700",
+            "parentId": 21
+        },
+        {
+            "id": 55,
+            "title": "50元 1G数据流量包",
+            "credits": 3535,
+            "exchangeType": 1,
+            "equalScor": "LL1000",
+            "parentId": 21
+        },
+        {
+            "id": 56,
+            "title": "70元 2G数据流量包",
+            "credits": 4964,
+            "exchangeType": 1,
+            "equalScor": "LL2000",
+            "parentId": 21
+        },
+        {
+            "id": 57,
+            "title": "100元 3G数据流量包",
+            "credits": 7089,
+            "exchangeType": 1,
+            "equalScor": "LL3000",
+            "parentId": 21
+        },
+        {
+            "id": 58,
+            "title": "130元 4G数据流量包",
+            "credits": 9214,
+            "exchangeType": 1,
+            "equalScor": "LL4000",
+            "parentId": 21
+        },
+        {
+            "id": 59,
+            "title": "180元 6G数据流量包",
+            "credits": 12750,
+            "exchangeType": 1,
+            "equalScor": "LL6000",
+            "parentId": 21
+        },
+        {
+            "id": 60,
+            "title": "280元 11G数据流量包",
+            "credits": 19839,
+            "exchangeType": 1,
+            "equalScor": "LL11000",
+            "parentId": 21
+        },
+        {
+            "id": 61,
+            "title": "30元 210M数据流量季包",
+            "credits": 2125,
+            "exchangeType": 1,
+            "equalScor": "LLJ210",
+            "parentId": 21
+        },
+        {
+            "id": 62,
+            "title": "60元 450M数据流量季包",
+            "credits": 4250,
+            "exchangeType": 1,
+            "equalScor": "LLJ450",
+            "parentId": 21
+        },
+        {
+            "id": 63,
+            "title": "90元 1500M数据流量季包",
+            "credits": 6375,
+            "exchangeType": 1,
+            "equalScor": "LLJ1500",
+            "parentId": 21
+        },
+        {
+            "id": 64,
+            "title": "60元 420M数据流量半年包",
+            "credits": 4250,
+            "exchangeType": 1,
+            "equalScor": "LLB420",
+            "parentId": 21
+        },
+        {
+            "id": 65,
+            "title": "120元 900M数据流量半年包",
+            "credits": 8500,
+            "exchangeType": 1,
+            "equalScor": "LLB900",
+            "parentId": 21
+        },
+        {
+            "id": 66,
+            "title": "180元 3000M数据流量半年包",
+            "credits": 12750,
+            "exchangeType": 1,
+            "equalScor": "LLB3000",
+            "parentId": 21
+        },
+        {
+            "id": 41,
+            "title": "5元电子券",
+            "credits": 450,
+            "exchangeType": 2,
+            "equalScor": "DZQ5",
+            "parentId": 40
+        },
+        {
+            "id": 42,
+            "title": "10元电子券",
+            "credits": 900,
+            "exchangeType": 2,
+            "equalScor": "DZQ10",
+            "parentId": 40
+        },
+        {
+            "id": 43,
+            "title": "20元电子券",
+            "credits": 1800,
+            "exchangeType": 2,
+            "equalScor": "DZQ20",
+            "parentId": 40
+        },
+        {
+            "id": 44,
+            "title": "30元电子券",
+            "credits": 2700,
+            "exchangeType": 2,
+            "equalScor": "DZQ30",
+            "parentId": 40
+        },
+        {
+            "id": 46,
+            "title": "10元 100M流量加油包",
+            "credits": 714,
+            "exchangeType": 1,
+            "equalScor": "LLDJ100",
+            "parentId": 45
+        }
+    ]
+}

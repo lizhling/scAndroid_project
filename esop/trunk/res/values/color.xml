@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#ffffff00</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="t_black">#88000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="light_gray">#ffcccccc</color>
+    <color name="first_layer_back_bground">#ff010B48</color>
+    <color name="transparent">#00000000</color>
+    <color name="deeptextcolor">#0E2252</color>
+    <color name="lighttextcolor">#ABC3DD</color>
+    <color name="second_w_font_color">#ff191F47</color>
+    <color name="firebrick">#B22222</color><!--火砖色 --> 
+	<color name="powderblue">#B0E0E6</color><!--粉蓝色 --> 
+	<color name="lightsteelblue">#B0C4DE</color><!--亮钢兰色 --> 
+	<color name="paleturquoise">#AFEEEE</color><!--苍宝石绿 --> 
+	<color name="greenyellow">#ADFF2F</color><!--黄绿色 --> 
+	<color name="lightblue">#aa0474C4</color><!--亮蓝色 --> 
+	<color name="darkgray">#A9A9A9</color><!--暗灰色 --> 
+	<color name="darkgrey">#111111</color><!--暗灰色 --> 
+	
+	<color name="aquamarine">#7FFFD4</color><!--碧绿色 --> 
+	<color name="chartreuse">#7FFF00</color><!--黄绿色 --> 
+	<color name="lawngreen">#7CFC00</color><!--草绿色 --> 
+	<color name="mediumslateblue">#7B68EE</color><!--中暗蓝色 --> 
+	<color name="lightslategray">#778899</color><!--亮蓝灰 --> 
+	<color name="lightslategrey">#778899</color><!--亮蓝灰 --> 
+    <color name="blue">#ffccddff</color>
+    <color name="gray">#ff808080</color>
+    <color name="darkorange">#ff8c00</color><!--深橙色 --> 
+<!--     <color name="top_button_text_color">#603300</color> -->
+    <color name="item_title_color">#0167b2</color>
+    <color name="item_summary_color">#4b4b4b</color>
+    <!--  -->
+<!--     <color name="scroll_message_backgroud">#aaffffff</color> -->
+    
+    <drawable name="white">#ffffffff</drawable>
+    <drawable name="black">#ff000000</drawable>
+    <drawable name="transparent">#aaffffff</drawable>
+    <drawable name="folder_divider">#111111</drawable>
+    
+<!--     <color name="msg_dialog_title_bg">#0077DD</color> -->
+<!--     <color name="msg_dialog_msg_bg">#ffffffff</color> -->
+<!--     <color name="msg_dialog_btn_bg">#BDBDBD</color> -->
+    
+<!--     <color name="list_separator">#ff000000</color> -->
+    <color name="message_time_text">#003358</color>
+    <color name="message_item_title_oped">#444444</color>
+    <color name="message_item_time">#9f9f9f</color>
+    <color name="message_detail_split">#b5b5b5</color>
+    <color name="message_detail_feedback_bg">#f9f9f9</color>
+    <!-- SecurePasswordActivity  -->
+    <color name="top_text_color">#017bc7</color>
+    <!-- BrowserActivity -->
+    <color name="browser_root_view">#ffffffff</color>
+    <color name="browser_visit_web_btn">#ffffffff</color>
+    <color name="browser_book_mark_text_normal">#277ac3</color>
+     <color name="browser_title_bar_bg">#277ac3</color>
+    <!-- FeedBacksActivity -->
+    <color name="feedbacks_hint_text_color">#A9A9A9</color> 
+    <color name="feedbacks_listview_bg">#ffffffff</color> 
+    <color name="feedback_btn_text_color">#ffffffff</color> 
+    <!-- LoginActivity -->
+    <color name="login_hint_text_color">#ff000000</color>
+     <color name="login_text">#454545</color>
+    <color name="message_item_title_unop">#005097</color>
+	<!-- PushMessageSettingActivity -->
+    <color name="server_ip_text_color">#ff000000</color>
+    <!-- SettingActivity -->
+    <color name="screen_direction_split_color">#ffb0b0b0</color>
+    <color name="list_item_1">#ff3c3c3c</color>
+    <!-- MessageListFragment  -->
+    <color name="listview_bg">#ffffffff</color>
+    <!-- dialog -->
+    <color name="dilog_title_text">#ffffffff</color>
+    <!-- LockActivity  textcolr -->
+    <color name="password_input_status">#ff000000</color>
+    <color name="lock_btn_text">#ff000000</color>
+    <color name="text_color_3">#595959</color>
+    
+	<!-- 标题栏字体颜色 -->
+	<color name="top_title_text_color">#ffffff</color>
+	<!-- 标题栏背景颜色 -->
+	<color name="top_bg">#838B83</color>
+    <!-- 登录界面(LoginActivity) -->
+	<!-- 验证码获取按钮字体颜色 -->
+   	<color name="login_get_auth_code_text_color">#000000</color>
+	<!-- 登录按钮字体颜色 -->
+   	<color name="login_btn_text_color">#ffffff</color>
+</resources>

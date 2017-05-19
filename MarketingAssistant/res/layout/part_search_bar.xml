@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/block_padding5"
+        android:src="@drawable/selector_search" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editText_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/btn_search"
+        android:layout_toLeftOf="@id/btn_search"
+        android:background="@drawable/shape_white_bg"
+        android:hint="@string/search"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/block_padding5"
+        android:singleLine="true" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="visible_times">
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="screen_directions">
+        <item>竖屏</item>
+        <item>横屏</item>
+    </string-array>
+    
+     <string-array name="operate_bookmarks">
+        <item>删除书签</item>
+        <item>编辑书签</item>
+        <item>发送桌面</item>
+    </string-array>
+    
+    <string-array name="operate_historys">
+        <item>删除历史</item>
+    </string-array>
+    
+      <string-array name="history_group_names">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>三天前</item>
+    </string-array>
+</resources>

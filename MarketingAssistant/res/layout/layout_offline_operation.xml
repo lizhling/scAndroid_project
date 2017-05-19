@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_f2"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/radioStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center_horizontal|bottom"
+            android:text="下载管理"
+            android:textSize="@dimen/text_size_1" />
+<View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_dialog_spilator" />
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/radioStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="城市列表"
+            android:textSize="@dimen/text_size_1" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@drawable/white_dialog_spilator" />
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white_f2" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/listView_upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/none_gridview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/noCotent"
+                android:textSize="@dimen/text_size_2" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/listView_citys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent" />
+    </ViewSwitcher>
+
+</LinearLayout>

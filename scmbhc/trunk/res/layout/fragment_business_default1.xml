@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/businessHandle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_function_panel"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/businessCharge"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/textView_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/businessIntroduce"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/textView_showHtml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bg_btn"
+            android:minHeight="30dp"
+            android:text="@string/clickManage"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/warmNotice"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/textView_warmNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+</ScrollView>

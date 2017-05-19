@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 流量服务 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.sunrise.scmbhc.ui.view.InstrumentPanel
+                android:id="@+id/instrumentPanel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="套餐总量："
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/package_totle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0KB"
+                        android:textColor="#0085d0"
+                        android:textSize="@dimen/text_size_3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="本月已用："
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/package_used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0KB"
+                        android:textColor="#0085d0"
+                        android:textSize="@dimen/text_size_3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="本月剩余："
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/package_surplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0KB"
+                        android:textColor="#0085d0"
+                        android:textSize="@dimen/text_size_3" />
+                </TableRow>
+
+                <Button
+                    android:id="@+id/button_traffic_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/block_margin"
+                    android:layout_marginBottom="@dimen/block_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_btn"
+                    android:text="@string/flowDetail"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3"
+                    android:visibility="gone" />
+            </TableLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="根据您以往流量使用，我们为您推荐"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_3" />
+
+            <Button
+                android:id="@+id/button_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bg_btn"
+                android:clickable="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="推荐流量包"
+            android:textColor="@android:color/black" />
+
+        <com.sunrise.scmbhc.ui.view.ExpandingGridView
+            android:id="@+id/gridView_recommend_network_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawSelectorOnTop="true"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@color/transparent"
+            android:minHeight="100dp"
+            android:numColumns="4"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+
+</ScrollView>

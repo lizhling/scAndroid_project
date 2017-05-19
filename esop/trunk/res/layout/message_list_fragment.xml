@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_height="fill_parent"
+     android:layout_width="fill_parent"
+    >
+    <include layout="@layout/top_title" />
+	<ListView 
+	   android:layout_marginTop="20dip"
+	   android:id="@id/android:list"
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:listSelector="@drawable/chat_history_selector"
+       android:transcriptMode="alwaysScroll"
+       android:scrollbarStyle="insideInset"
+       android:stackFromBottom="false"
+       android:fadingEdge="none"
+       android:fadeScrollbars="true" 
+       android:fadingEdgeLength="0.0dip" 
+       android:fastScrollEnabled="true" 
+       android:divider="@android:color/transparent"
+       android:dividerHeight="10dip"
+       android:background="@color/transparent"
+       android:cacheColorHint="#00000000"/>
+</LinearLayout>

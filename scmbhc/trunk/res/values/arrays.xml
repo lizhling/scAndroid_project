@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 两城一家 -->
+    <string-array name="tC1H_cityName">
+        <item>2城一家(省内-大成都)</item>
+        <item>2城一家(省内-绵阳)</item>
+        <item>2城一家(省内-自贡)</item>
+        <item>2城一家(省内-攀枝花)</item>
+        <item>2城一家(省内-广元)</item>
+        <item>2城一家(省内-达州)</item>
+        <item>2城一家(省内-泸州)</item>
+        <item>2城一家(省内-广安)</item>
+        <item>2城一家(省内-巴中)</item>
+        <item>2城一家(省内-遂宁)</item>
+        <item>2城一家(省内-宜宾)</item>
+        <item>2城一家(省内-内江)</item>
+        <item>2城一家(省内-乐山)</item>
+        <item>2城一家(省内-雅安)</item>
+        <item>2城一家(省内-德阳)</item>
+        <item>2城一家(省内-南充)</item>
+        <item>2城一家(省内-阿坝)</item>
+        <item>2城一家(省内-甘孜)</item>
+        <item>2城一家(省内-凉山)</item>
+    </string-array>
+    <string-array name="tC1H_city_code_old">
+        <item>sn01$$00</item>
+        <item>sn02$$00</item>
+        <item>sn03$$00</item>
+        <item>sn04$$00</item>
+        <item>sn05$$00</item>
+        <item>sn06$$00</item>
+        <item>sn07$$00</item>
+        <item>sn08$$00</item>
+        <item>sn09$$00</item>
+        <item>sn10$$00</item>
+        <item>sn11$$00</item>
+        <item>sn12$$00</item>
+        <item>sn13$$00</item>
+        <item>sn14$$00</item>
+        <item>sn15$$00</item>
+        <item>sn16$$00</item>
+        <item>sn17$$00</item>
+        <item>sn18$$00</item>
+        <item>sn19$$00</item>
+    </string-array>
+    <string-array name="tC1H_provinces">
+        <item> 2城一家(北京)</item>
+        <item>2城一家(福建) </item>
+        <item>2城一家(甘肃)</item>
+        <item>2城一家(广西)</item>
+        <item>2城一家(广东)</item>
+        <item>2城一家(贵州)</item>
+        <item>2城一家(海南)</item>
+        <item>2城一家(河北)</item>
+        <item>2城一家(河南)</item>
+        <item>2城一家(黑龙江)</item>
+        <item>2城一家(湖北)</item>
+        <item>2城一家(湖南)</item>
+        <item>2城一家(吉林)</item>
+        <item>2城一家(江苏)</item>
+        <item>2城一家(江西)</item>
+        <item>2城一家(辽宁)</item>
+        <item>2城一家(内蒙古)</item>
+        <item>2城一家(宁夏)</item>
+        <item>2城一家(青海)</item>
+        <item>2城一家(山东)</item>
+        <item>2城一家(山西)</item>
+        <item>2城一家(陕西)</item>
+        <item>2城一家(上海)</item>
+        <item>2城一家(天津)</item>
+        <item>2城一家(西藏)</item>
+        <item>2城一家(新疆)</item>
+        <item>2城一家(云南)</item>
+        <item>2城一家(浙江)</item>
+        <item>2城一家(重庆)</item>
+    </string-array>
+    <string-array name="tC1H_province_code_old">
+        <item>yj01$$00</item>
+        <item>yj02$$00</item>
+        <item>yj03$$00</item>
+        <item>yj04$$00</item>
+        <item>yj05$$00</item>
+        <item>yj06$$00</item>
+        <item>yj07$$00</item>
+        <item>yj08$$00</item>
+        <item>yj09$$00</item>
+        <item>yj10$$00</item>
+        <item>yj11$$00</item>
+        <item>yj12$$00</item>
+        <item>yj13$$00</item>
+        <item>yj14$$00</item>
+        <item>yj15$$00</item>
+        <item>yj16$$00</item>
+        <item>yj17$$00</item>
+        <item>yj18$$00</item>
+        <item>yj19$$00</item>
+        <item>yj20$$00</item>
+        <item>yj21$$00</item>
+        <item>yj22$$00</item>
+        <item>yj23$$00</item>
+        <item>yj24$$00</item>
+        <item>yj25$$00</item>
+        <item>yj26$$00</item>
+        <item>yj27$$00</item>
+        <item>yj28$$00</item>
+        <item>yj29$$00</item>
+        <item>yj30$$00</item>
+    </string-array>
+    <!--  -->
+    <string-array name="feedbackTypes">
+        <item>系统漏洞</item>
+        <item>意见反馈</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="moreFunctionInCommon">
+        <item>@string/topupHistory</item>
+        <item>预约取号</item>
+        <item>精准流量提醒</item>
+        <item>使用帮助</item>
+    </string-array>
+    <string-array name="moreFunctionOther">
+        <item>温馨提示</item>
+        <item>二维码扫描</item>
+        <item>关于应用</item>
+        <item>消息列表</item>
+        <item>密码修改</item>
+        <item>照片打印</item>
+<!--         <item>EDU全年套餐（测试）</item>
+        <item>合家欢（测试）</item> -->
+    </string-array>
+    <string-array name="searchType">
+        <item>全部</item>
+        <item>业务</item>
+        <item>优惠</item>
+    </string-array>
+    <string-array name="trafficNotificationMode">
+        <item>通知栏提醒</item>
+        <item>弹窗提醒</item>
+    </string-array>
+    <string-array name="trafficOverHandleMode">
+        <item>断开数据网络</item>
+        <item>提醒我</item>
+    </string-array>
+    <string-array name="CallTransferType">
+        <item>无条件转移</item>
+        <item>无应答转移</item>
+        <item>不可及转移</item>
+        <item>遇忙转移</item>
+        <item>取消呼叫转移号码</item>
+    </string-array>
+
+    <integer-array name="CallTransfer_OP_TYPE">
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="giveAsGiftDuration">
+        <item>1个月</item>
+        <item>3个月</item>
+        <item>半年</item>
+        <item>一年</item>
+    </string-array>
+
+</resources>

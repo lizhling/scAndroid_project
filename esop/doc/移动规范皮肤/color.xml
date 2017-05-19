@@ -1,0 +1,12 @@
+ <colors>
+	<!-- 标题栏(TopTitle)-->
+		<!-- 标题栏字体颜色 -->
+		<color name="top_title_text_color">#ffffff</color>
+		<!-- 标题栏背景颜色 -->
+		<color name="top_bg">#838B83</color>
+	<!-- 登录界面(LoginActivity) -->
+		<!-- 验证码获取按钮字体颜色 -->
+    	<color name="login_get_auth_code_text_color">#000000</color>
+		<!-- 登录按钮字体颜色 -->
+    	<color name="login_btn_text_color">#ffffff</color>
+</colors>

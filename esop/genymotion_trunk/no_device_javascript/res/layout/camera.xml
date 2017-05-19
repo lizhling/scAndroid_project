@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/camera_background"
+        android:id="@+id/camera"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false">
+    <com.sunrise.javascript.utils.device.yingke.PreviewFrameLayout android:id="@+id/frame_layout"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+        <FrameLayout android:id="@+id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border_view_finder">
+            <SurfaceView android:id="@+id/camera_preview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+            <ImageView android:id="@+id/image_capture_preview"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:contentDescription="@string/app_name"/>
+            <TextView android:id="@+id/resultText"
+		     	android:layout_width="fill_parent"
+		     	android:layout_height="fill_parent"
+		     	android:visibility="gone"
+		     	android:textAppearance="?android:textAppearanceLarge"/>
+            <LinearLayout android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:gravity="center"
+        		>
+            <ImageView android:id="@+id/image_focus"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/focus_scope"
+					android:contentDescription="@string/app_name"/>
+            </LinearLayout>
+            <TextView android:id="@+id/txt_remark"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:text="@string/txt_remark"
+		     	android:paddingTop="5dip"
+		     	android:textSize="@dimen/text_size"/>
+        </FrameLayout>
+    </com.sunrise.javascript.utils.device.yingke.PreviewFrameLayout>
+</LinearLayout>

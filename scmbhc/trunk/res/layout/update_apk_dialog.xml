@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_dialog_bg">
+
+    <include layout="@layout/dialog_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" 
+        android:padding="@dimen/block_padding"
+        >
+
+        <TextView
+            android:id="@+id/latest_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:text="@string/latest_version_name"/>
+        
+        <TextView
+            android:id="@+id/support_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/support_version_name"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_des"/>
+        
+         <TextView
+            android:id="@+id/update_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+         
+         <TextView
+            android:layout_marginTop="15dip"
+            android:id="@+id/must_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/version_too_low"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="@dimen/block_padding" >
+
+        <Button
+            android:id="@+id/update_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_bg"
+            android:gravity="center"
+            android:text="@string/update_now"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/later_say"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/grey_button_bg"
+            android:gravity="center"
+            android:text="@string/later_say"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

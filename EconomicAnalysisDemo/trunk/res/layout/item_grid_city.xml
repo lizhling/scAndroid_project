@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/seperate_small" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView_city"
+            style="@style/item_grid_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="city"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_small" />
+
+        <ImageView
+            android:id="@+id/imageView_eyeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:src="@drawable/eye_xml" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="盈利能力"
+        style="@style/item_grid_city_text"
+        android:textColor="@color/goldyellow"
+        android:textSize="@dimen/textsize_tiny" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指标得分:"
+            style="@style/item_grid_city_text"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/textsize_tiny" />
+
+        <TextView
+            android:id="@+id/textView_indicatorScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seperate_tiny"
+            android:text="0.0"
+            style="@style/item_grid_city_text"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/textsize_tiny" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全省平均得分:"
+            style="@style/item_grid_city_text"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/textsize_tiny" />
+
+        <TextView
+            android:id="@+id/textView_averageScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seperate_tiny"
+            android:text="0.0"
+            style="@style/item_grid_city_text"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/textsize_tiny" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排名:"
+                style="@style/item_grid_city_text"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/textsize_tiny" />
+
+            <TextView
+                android:id="@+id/textView_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/seperate_tiny"
+                android:text="0"
+                style="@style/item_grid_city_text"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/textsize_tiny" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seperate_tiny"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级:"
+                style="@style/item_grid_city_text"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/textsize_tiny" />
+
+            <ImageView
+                android:id="@+id/imageView_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/seperate_tiny"
+                android:src="@drawable/level_0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

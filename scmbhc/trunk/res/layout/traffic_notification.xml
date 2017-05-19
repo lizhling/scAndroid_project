@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_shape_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_tranfic_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="@string/current_remain_traffic"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/remind_traffic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/traffic_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="5dip"
+                android:minHeight="10dip"
+                android:paddingBottom="3dip"
+                android:progress="100"
+                android:progressDrawable="@drawable/myseekbar_drawable" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/block_margin"
+            android:gravity="center_vertical"
+            android:text="@string/traffic_notification_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dip"
+            android:background="@drawable/bg_function_panel"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dip"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/traffic_notification_function"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <com.sunrise.scmbhc.ui.view.SwitchButton
+                    android:id="@+id/traffic_notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/off" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/bg_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/traffic_notification_surplus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <Button
+                    android:id="@+id/bt_threshold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0Mb"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/selector_bt_open_amaranth_white"
+                    android:background="@drawable/selector_bg_business_open"
+                    android:textSize="@dimen/text_size_2" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/bg_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/notification_mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <Button
+                    android:id="@+id/traffic_notification_modetest"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="2.0"
+                    android:background="@drawable/spinner_bg"
+                    android:drawablePadding="5dip"
+                    android:drawableRight="@drawable/spinner_bg_right"
+                    android:gravity="center"
+                    android:text="@string/notification_mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <Spinner
+                    android:id="@+id/traffic_notification_mode_spinner"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:background="@color/transparent" />
+
+                <com.sunrise.scmbhc.ui.view.MySpinner
+                    android:id="@+id/traffic_notification_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/bg_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/traffic_over_handle_mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <Button
+                    android:id="@+id/traffic_over_handle_modetest"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="2.0"
+                    android:background="@drawable/spinner_bg"
+                    android:drawablePadding="5dip"
+                    android:drawableRight="@drawable/spinner_bg_right"
+                    android:gravity="center"
+                    android:text="@string/notification_mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+
+                <Spinner
+                    android:id="@+id/traffic_over_handle_mode_spinner"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:background="@color/transparent" />
+
+                <com.sunrise.scmbhc.ui.view.MySpinner
+                    android:id="@+id/traffic_over_handle_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

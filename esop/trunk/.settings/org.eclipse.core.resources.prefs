@@ -1,0 +1,14 @@
+#Tue Dec 25 14:12:54 CST 2012
+eclipse.preferences.version=1
+encoding//src/com/starcpt/cmuc/CmucApplication.java=UTF-8
+encoding//src/com/starcpt/cmuc/exception/http/HttpRefusedException.java=UTF-8
+encoding//src/com/starcpt/cmuc/exception/http/ResponseException.java=UTF-8
+encoding//src/com/starcpt/cmuc/net/ServerClient.java=UTF-8
+encoding//src/com/starcpt/cmuc/net/http/HttpClient.java=UTF-8
+encoding//src/com/starcpt/cmuc/ui/activity/CommonActions.java=UTF-8
+encoding//src/com/starcpt/cmuc/ui/activity/MainTabActivity.java=UTF-8
+encoding//src/com/starcpt/cmuc/ui/activity/StartActivity.java=UTF-8
+encoding//src/com/starcpt/cmuc/ui/activity/WebViewActivity.java=UTF-8
+encoding//src/com/starcpt/cmuc/utils/Base64.java=GBk
+encoding//src/com/starcpt/cmuc/utils/FileUtils.java=UTF-8
+encoding/<project>=UTF-8

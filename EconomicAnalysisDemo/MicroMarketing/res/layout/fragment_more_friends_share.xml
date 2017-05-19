@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/part_head_bar" />
+
+    <TextView
+        android:id="@+id/share_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/seperate_small" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="短信分享"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_subbusiness"
+            android:gravity="center_vertical"
+            android:padding="@dimen/seperate_mid" >
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="7dp"
+                android:text="+86"
+                android:textSize="@dimen/textsize_mid" />
+
+            <Button
+                android:id="@+id/send"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="发送分享" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/send"
+                android:layout_toRightOf="@id/tv_num"
+                android:background="@drawable/gray_stroke_gray_solid_shape_bg" >
+
+                <EditText
+                    android:id="@+id/editText_friend_mobile"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/inputCorrectMobileNumber"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:minHeight="30dp"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textsize_mid" />
+
+                <ImageView
+                    android:id="@+id/button_addressList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_contacts" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="分享二维码"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/seperate_mid" >
+
+            <ImageView
+                android:id="@+id/imageView_twodimensioncode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_ssjf_share" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_tab"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="链接文字分享"
+                android:textColor="@color/selector_tab_white_grey" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="二维码图片分享"
+                android:textColor="@color/selector_tab_white_grey" />
+        </RadioGroup>
+
+        <ViewSwitcher
+            android:id="@+id/viewSwitcher01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_bg" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/seperate_small" >
+
+                <GridView
+                    android:id="@+id/gridView_share_by_string"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dip" />
+
+                <TextView
+                    android:id="@+id/none_gridview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="无"
+                    android:textSize="@dimen/textsize_tiny" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/seperate_small" >
+
+                <GridView
+                    android:id="@+id/gridView_share_by_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dip" />
+
+                <TextView
+                    android:id="@+id/none_gridview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="无"
+                    android:textSize="@dimen/textsize_tiny" />
+            </FrameLayout>
+        </ViewSwitcher>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>获取运行环境信息</title>
+<script type="text/javascript">
+function getUserInfoCallBack(source)
+{
+    alert(source);
+}
+
+function getDeviceInfoCallBack(source)
+{
+    alert(source);
+}
+
+</script>
+</head>
+
+<body>
+<p><strong>获取用户信息</strong></p>
+<form id="form2" name="form2" method="post" action="">
+  <label>
+  <input type="button" name="Submit" value="获取用户信息" onclick="window.SccmccInfo.getUserInfo()"/>
+  </label>
+</form>
+
+<p><strong>获取设备信息</strong></p>
+<form id="form2" name="form2" method="post" action="">
+  <label>
+  <input type="button" name="Submit" value="获取设备信息" onclick="window.SccmccInfo.getDeviceInfo()"/>
+  </label>
+</form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/camera_main"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.sunrise.javascript.activity.ScreenSetting
+            android:id="@+id/camera_screen_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/camera_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/camera_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="28dp"
+            android:text="@string/camera_indicator" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/camera_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.sunrise.javascript.activity.VerticalSeekBar
+            android:id="@+id/zoom_verticalSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_margin="8dip"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:max="100"
+            android:layout_height="200dip" />
+        
+        <ImageButton
+            android:id="@+id/camera_shutter_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:background="@drawable/btn_shutter"
+            android:src="@drawable/btn_ic_camera_shutter"
+            />
+
+        <Button
+            android:id="@+id/camera_recog"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="识别"
+            android:visibility="invisible"
+             />
+    </LinearLayout>
+
+</LinearLayout>

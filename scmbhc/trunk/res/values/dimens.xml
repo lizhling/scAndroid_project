@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_0">24sp</dimen>
+    <dimen name="text_size_1">20sp</dimen>
+    <dimen name="text_size_2">15sp</dimen>
+    <dimen name="text_size_3">12sp</dimen>
+    <dimen name="text_size_5">10sp</dimen>
+    <dimen name="text_size_4">8sp</dimen>
+    <dimen name="gridview_horizontalSpacing">10dip</dimen>
+    <dimen name="sliding_menu_item_left_pading">15dip</dimen>
+    <dimen name="sliding_menu_item_right_pading">2dip</dimen>
+    <dimen name="sliding_menu_progress_bar_height">13dip</dimen>
+    <dimen name="block_padding">10dip</dimen>
+    <dimen name="block_margin">10dip</dimen>
+</resources>

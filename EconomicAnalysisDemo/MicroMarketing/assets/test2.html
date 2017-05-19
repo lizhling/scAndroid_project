@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+		<script type="text/javascript">   
+			function readIdCard() {       
+    	    	javascript:ThirdPartyDeviceUtils.requestReadIDCard('read id card');   
+    	    }
+    	    function readSimCard() {       
+    	    	javascript:ActivityUtils.requestReadSIMCard('read sim card');   
+    	    }
+    	    function configReadner() {
+    	        //javascript:ActivityUtils.ConfigReader('4321');
+    	        javascript:ThirdPartyDeviceUtils.requestConfigReader("234234");
+            }
+    	    function requestPrint(msg) {       
+    	    	javascript:ThirdPartyDeviceUtils.requestPrint(msg,'utf-8','false');
+    	    }
+            function writeSimCard(url) {       
+                 javascript:ActivityUtils.requestWriteSimCard(url,'write sim card');   
+            }
+            
+            function javaScriptApiCallBack(callback,key) {       
+                 alert('key = '+key + ' 返回信息：'+JSON.stringify(callback));
+            }
+            
+            function outputClean(){
+            	document.getElementById('outputArea').innerHTML=' ';
+            }
+            
+            function outputShow(msg){
+            	document.getElementById('outputArea').innerHTML += msg+'<br>';
+            }
+		</script>
+	
+	</head>
+	
+	<body >
+		<input type="button" value="读身份证" onClick="readIdCard()" />
+		<input type="button" value="连接读卡器" onClick="configReadner()" />̀
+	    <input type="button" value="读sim卡" onClick="readSimCard()" />̀
+	    <input type="button" value="requestPrint" onClick="requestPrint('打印东西')" />̀
+	    <!-- 现场开卡数据 -->
+	    <input type="button" value="开卡" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F2CECD20E76A3A67D2A40228E7264A074C5C0FBA5CC94378704D9748F8EB23FEB9A07DDDAF8E965D32078BEC6AC6BEA3C7742C60E96DB73952068BF49DAB9A80A3DCF14CEA5F396C04098D371013C20A30D183A108B028E34DBED0464D38A2AD6D')" /> 
+	    <!-- 现场写卡数据-->
+	    <input type="button" value="换卡" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F27805171EF9FDF9CCAB35AE8EF627757245693DCD48ED8A4BE5B39265E135A0CDDC858F9A3A15356848C46950F4F57FE78A0C02024156A1D221AC30F0A2B0CC40E203CA41CB2592D9B4246A0EA448AA8754FC62968C06C38F2E7EFAEF461347A3')" />
+	    <br>
+	    <input type="text" >
+	    
+	    <br>
+	    <!-- 现场开卡数据 -->
+        <input type="button" value="97开卡1" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F271A1EB2C3B5CC0ECD7A870440E6A4DA0D59D36E0112BBAD87B3BD1F09718E8C5EB9C121DE5327B57FC7E7E0AFBFD38BE3BEAA2FD02E80A002EF8F43609190B14E2E2B007664E2725D3E88A939FA4DECD4B98D79F455B0BB7ECEB4FE3DE55BD06')" />
+        <!-- 现场开卡数据 -->
+        <input type="button" value="97开卡2" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F2D9BA2A98DBEDB4D1BCA10BFB2CA19D91CD9A65CD0795C5DBDE98CF1DDDE9141E4E4BBCE526CABABA1E13CC20B3D91F20DD54449402FDD42F8063E41E4DF0D0BE609A5A66F14122B95CC5B573CA80CD42731256BB4E9409B11F79EBA146C1E122')" /> 
+        <!-- 现场写卡数据-->
+        <input type="button" value="97换卡" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F244F7C1548FE7A43A38A70EEFE8393B44FA9EAE711E086E1358601292A00A46C141CFBB8EE1C2ED69ABC75FCD02E8A9FE02063B6BE37C276FD67ED76903B3FB956B921B6F1BC32614E7A2221A4F4C53A6881CAEA6852B4A29D843625CF9FD796F')" />
+        
+        <!-- 22140050080040003823 -->
+        <input type="button" value="23换卡" onClick="writeSimCard('A0C200008CD18189020283810B81826005A11028F17FF66080121152142372070003010101700000681106000505B000F2F9A00D89466D43D40CDCAFAD58F557F4CA91872C908B13162C96FA5C40BAEBEFD1B293D748CFFB978F8A936096B7425B25E190850E4E20E66F7B421882DDC9B0BE0F153FEAFBE98A353858F94EB554DAA0BBA3DED5AA51909F2EE67189B02C83')" />
+        <br>
+        </br>
+        <!-- <input name="file" type="file"></input> -->
+        <br>
+        </br>
+        <input type="button" value="实名认证" onClick="javascript:ID_LOAD.idload('28020141202122623579450','18408230888','ob0014','05','280','Sl6ZTRkffpNpw+3KuVA5auMJisJKx0mNohP5fr/ZYuMCr1u6UtGAY4162St/CwAR7c3lGy1NqMEEI2FkVZuuTaaDEpo3eTJWeSOGa/6tXN1iVQo9ULW3E9Ka65/XpAz44mud5zOPmkL4LOah0M56Bk+BJer2sFZhXvRPbDGosc7Zc8B56V0SuRq4YhlFzTE3twDozqyWhRca4kmX9KuNEU4SoINHL+5s5nQoopoGP+j5pZXBC9q28qsth+e1UYNUdHqLmaBz/gdOcfNJoAY7t30LWcwp6IMgA+Qxm7clyGvhyFPJWzwxALexA0mf1MRRUUp/j4E/wXRrrPepg6rRPQ==','id card load')" />
+        <input type="button" value="实名认证2" onClick="javascript:ActivityUtils.idload('28020141202122623579450','18408230888','ob0014','05','280','Sl6ZTRkffpNpw+3KuVA5auMJisJKx0mNohP5fr/ZYuMCr1u6UtGAY4162St/CwAR7c3lGy1NqMEEI2FkVZuuTaaDEpo3eTJWeSOGa/6tXN1iVQo9ULW3E9Ka65/XpAz44mud5zOPmkL4LOah0M56Bk+BJer2sFZhXvRPbDGosc7Zc8B56V0SuRq4YhlFzTE3twDozqyWhRca4kmX9KuNEU4SoINHL+5s5nQoopoGP+j5pZXBC9q28qsth+e1UYNUdHqLmaBz/gdOcfNJoAY7t30LWcwp6IMgA+Qxm7clyGvhyFPJWzwxALexA0mf1MRRUUp/j4E/wXRrrPepg6rRPQ==','id card load')" />
+        <br>
+        </br>
+        <input type="button" value="获取图片" onClick="javascript:imageChooser.js_chooseImage('获取图片')" />
+        <br>
+        </br>
+        <input type="button" value="获取图片Base64文本" onClick="javascript:imageChooser.js_getImageBase64('获取文本')" />
+        <input type="button" value="上传图片" onClick="javascript:imageChooser.js_uploadImage('上传图片','http://218.205.231.141/photoprint/uploadPicture.do')" />
+        <input type="button" value="测试反馈" onClick="javascript:javaScriptApiCallBack('callbackinfo','key')" />
+        <input type="button" value="测试打开通讯录" onClick="javascript:phone.getPhoneFromContacts('ABCDEFG')" />
+        <input type="button" value="关闭窗口" onClick="javascript:SccmccControlWebScreen.closeWebScreen()" />
+        <input type="button" value="发送短信" onClick="javascript:phone.sendMessage('13438088728')" />
+        <input type="button" value="二维码扫描" onClick="javascript:ActivityUtils.scanQrCode('23456')" />
+        <input type="button" value="蓝牙身份证扫描" onClick="javascript:ActivityUtils.idloadBt('23456')" />
+        <input type="button" value="获取通讯录" onClick="javascript:getPhoneContracts('23423')" />
+        <br>
+        <input type="button" value="添加内容" onClick="javascript:outputShow(Math.random())" />
+        <input type="button" value="清理内容" onClick="javascript:outputClean()" />
+        <br>
+        <p id='outputArea' ></p>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/loginByServecePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4px"
+            android:background="@drawable/selector_bg_tab"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/loginByServecePassword"
+            android:textColor="@color/selector_tab_white_grey" />
+
+        <RadioButton
+            android:id="@+id/loginBySmsPassword"
+            style="@style/tab_bg_with_shawdow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4px"
+            android:background="@drawable/selector_bg_tab"
+            android:button="@null"
+            android:text="@string/loginBySmsPassword"
+            android:textColor="@color/selector_tab_white_grey" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_function_panel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/tag_mobile_number"
+                android:textColor="#3c8ddc"
+                android:textSize="@dimen/text_size_1" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hintInputMobileNumber"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:nextFocusDown="@+id/editText_password"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/btn_delete1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/presence_offline"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tag_password_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/tag_service_password"
+                android:textColor="#3c8ddc"
+                android:textSize="@dimen/text_size_1" />
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hintInputServicePassword"
+                android:inputType="number"
+                android:maxLength="6"
+                android:nextFocusDown="@id/editText_phoneNumber"
+                android:password="true"
+                android:singleLine="true" />
+            
+             <ImageView
+                android:id="@+id/btn_delete2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/presence_offline"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <CheckBox
+                android:id="@+id/checkBox_savePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/savePassword"
+                android:textColor="@android:color/black"
+                tools:ignore="NestedWeights" />
+
+            <CheckBox
+                android:id="@+id/checkBox_autoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/autoLogin"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/sendSmsPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_bg_azure"
+                android:text="@string/sendSmsPassword"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gridview_horizontalSpacing"
+        android:background="@drawable/selector_bg_btn"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/gridview_horizontalSpacing"
+            android:text="@string/forgetPassword"
+            android:textColor="@color/selector_bt_open_blue_white"
+            android:textSize="@dimen/text_size_3"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

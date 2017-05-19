@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="app_name">巡店宝</string>
+    <string name="latest_version_name">最新版本</string>
+    <string name="support_version_name">支持版本</string>
+    <string name="app_copyright">中国移动通信集团四川有限公司</string>
+    <string name="url_sc10086">http://sc.10086.cn</string>
+
+    <!-- for baidu map -->
+    <string name="demo_title_panorama">打开全景</string>
+    <string name="demo_desc_panorama0">通过百度全景ID(PID)获取全景</string>
+    <string name="demo_desc_panorama1">通过百度经纬度坐标获取全景</string>
+    <string name="demo_desc_panorama2">通过百度墨卡托坐标获取全景</string>
+    <string name="demo_desc_panorama3">通过百度地图UID获取外景</string>
+    <string name="demo_desc_panorama4">通过百度地图UID获取内景</string>
+    <string name="demo_desc_panorama5">添加自定义标注到全景图</string>
+    <string name="demo_desc_panorama6">高德, 腾讯, 谷歌坐标转换百度坐标</string>
+    <string name="demo_desc_panorama7">其他全景参数设置</string>
+
+    <!-- tabs -->
+    <string name="oneself_handle_business">业务办理</string>
+    <string name="search">搜索</string>
+    <string name="business">业务</string>
+    <string name="charge_value">充值</string>
+    <string name="home">首页</string>
+    <string name="traffic">流量</string>
+    <string name="discount_phone">我的特权</string>
+    <string name="more">更多</string>
+
+    <!-- in common use -->
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="Return">返回</string>
+    <string name="delete">删除</string>
+    <string name="exit">退出</string>
+    <string name="details">详情</string>
+    <string name="introduce">说明</string>
+    <string name="openUp">开通</string>
+    <string name="shutDown">关闭</string>
+    <string name="unsubscribe">退订</string>
+    <string name="handle">办理</string>
+    <string name="submit">提交</string>
+    <string name="send_share">发送分享</string>
+    <string name="share">分享</string>
+    <string name="businessState">业务状态</string>
+    <string name="noCotent">无内容</string>
+    <string name="inputText">输入文本...</string>
+    <string name="inputMobileNumber">输入手机号...</string>
+    <string name="hintInputMobileNumber">请输入手机号码</string>
+    <string name="sendSmsPassword">发送短信密码</string>
+    <string name="onListLoading">列表获取中……</string>
+    <string name="onDealing">处理中……</string>
+    <string name="update_now">立即升级</string>
+    <string name="later_say">以后再说</string>
+    <string name="dialog_default_title">警告</string>
+    <string name="re_try">重试</string>
+    <string name="failed">失败</string>
+    <string name="error">错误</string>
+    <string name="QueryAddressList">通讯录获取</string>
+    <string name="tagWarmNotice">温馨提示：</string>
+    <string name="warmNotice">温馨提示</string>
+    <string name="refreshing">更新中……</string>
+    <string name="user_balance_warp">用户\n余额</string>
+    <string name="remainder_traffic_warp">剩余\n流量</string>
+    <string name="current_score">当前\n积分</string>
+    <string name="user_score">用户积分</string>
+    <string name="consumption_integral_query">客户消费积分查询</string>
+    <string name="calls_the_electronic_ticket">话费\n电子券</string>
+    <string name="yuan">元</string>
+    <string name="zhao">M</string>
+    <string name="score">分</string>
+    <string name="unknow">未申请积分</string>
+    <string name="no_secret_key">密匙丢失，请重新登录。</string>
+    <string name="secret_key_overdue">密匙过期，请重新登录。</string>
+    <string name="json_error">"抱歉，服务器压力过大，稍后请重试……"</string>
+    <string name="inputCorrectMobileNumber">请输入正确手机号码……</string>
+    <string name="shareContent">邀您使用“巡店宝”，渠道查询和管理一条龙。</string>
+    <string name="defaultDownloadUrl">http://218.205.252.26:18098/scUnifiedAppManagePlatform/resources/uploadtemp/MarketingAssistant.apk</string>
+    <string name="frame_loading_fail">网络连接失败，请先检查网络……</string>
+    <string name="check_apk_version_progress">检查最新版本中……</string>
+    <string name="latest_version">已经是最新版本……</string>
+    <!-- 登录 -->
+    <string name="askInputAccount">请输入帐号……</string>
+    <string name="askInputPssword">请输入密码……</string>
+    <string name="login">登录</string>
+    <!-- 云图 -->
+    <string name="baiduTranslateWay">交通路线</string>
+    <string name="signIn">签到</string>
+    <string name="searchingBusLine">公交线路搜索中……</string>
+    <string name="searchingWalkLine">步行线路搜索中……</string>
+    <string name="searchingDriveLine">驾驶线路搜索中……</string>
+    <!-- webview -->
+    <string name="apk_download_fail">下载失败，请重试……</string>
+    <string name="latest_apk_downloading">安装包下载中……</string>
+    <string name="unzip_web">解压页面压缩包……</string>
+    <string name="load_web">加载网页……</string>
+    <!-- 搜索 -->
+    <string name="title_choice_starlevel">请选择星级筛选条件</string>
+    <!-- name -->
+    <string name="pageTurnHtmlRegist">function getDistance(latitude,longitute,key){window.PageTurnUtils.getDistance(latitude,longitute,key);}function startShareFunction(description,content){window.PageTurnUtils.startShareFunction(description,content);}function getTabInfos(key){window.PageTurnUtils.getTabInfos(key);}function insertCollectBranch(info,key){window.PageTurnUtils.insertCollectBranch(info,key);}function cancelCollectedBranchByGroupId(groupId,key){window.PageTurnUtils.cancelCollectedBranchByGroupId(groupId,key);}function getCollectedBranchByAccount(key){window.PageTurnUtils.getCollectedBranchByAccount(key);}function getCollectedBranchByGroupId(groupId,key){window.PageTurnUtils.getCollectedBranchByGroupId(groupId,key);}function getInfoFromOutPage(key){window.PageTurnUtils.getInfoFromOutPage(key);}function callBusinessWebPage(url,name,lastModify,outPageInfo){window.PageTurnUtils.callBusinessWebPage(url,name,lastModify,outPageInfo);}function callBusinessPage(outPageInfo){window.PageTurnUtils.callBusinessPage(outPageInfo);}function callMapPage(info){window.PageTurnUtils.callMapPage(info);}</string>
+    <string name="about">巡店宝\n简洁直观的，用于查询和管理下属渠道网点</string>
+    <string name="text_about_version">版本：%sersion for android</string>
+    <string name="mapMode">地图模式</string>
+    <string name="compassMode">罗盘模式</string>
+    <string name="competitors">竞争对手</string>
+    <string name="hide">隐藏</string>
+    <string name="show">显示</string>
+    <string name="mapSet">地图设置</string>
+    <!-- competitor -->
+    <string name="liantong">中国联通</string>
+    <string name="dianxin">中国电信</string>
+    <string name="CompetitorsInformationCollection">竞争对手信息采集</string>
+    <string name="weather">天气</string>
+    <string name="download">下载</string>
+    <string name="rankingOfSameTypeInSameDay">片区同类排名</string>
+    <string name="rankingOfSameTypeInSameMonth">片区同类排名</string>
+    <string name="dataOfDays">日数据</string>
+	<string name="dataOfMonths">月数据</string>
+	<string name="date">日期</string>
+	<string name="month">月份</string>
+</resources>

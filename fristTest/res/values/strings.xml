@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">fristTest</string>
+    <string name="latest_version_name">最新版本</string>
+    <string name="support_version_name">支持版本</string>
+    <string name="app_copyright">中国移动通信集团四川有限公司</string>
+    <string name="url_sc10086">http://sc.10086.cn</string>
+    <string name="confirm">确认</string>
+
+</resources>

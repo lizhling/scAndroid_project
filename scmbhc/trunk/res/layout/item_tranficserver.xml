@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    android:minWidth="54dip"
+    android:minHeight="73dip"
+    android:background="@drawable/comontranfic">
+    
+    <TextView
+        android:id="@+id/cost_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="3dip"
+        android:gravity="center"
+        android:paddingBottom="3dip"
+        android:text="10元"
+        android:background="@color/dark_red"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_5" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:text="70M"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="@dimen/text_size_2" />
+	<TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dip"
+        android:text="国内流量"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_5" />
+    
+    
+</RelativeLayout>

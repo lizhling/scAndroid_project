@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cityinfo>
+    <element
+        id="1"
+        name="甘孜藏族自治州"
+        average="80.25"
+        indicator="58.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="2"
+        name="阿坝羌族自治州"
+        average="80.25"
+        indicator="28.16"
+        level="2"
+        ranking="14" />
+
+    <element
+        id="3"
+        name="攀枝花"
+        average="80.25"
+        indicator="18.16"
+        level="3"
+        ranking="14" />
+
+    <element
+        id="4"
+        name="宜宾市"
+        average="50.25"
+        indicator="53.12"
+        level="4"
+        ranking="14" />
+
+    <element
+        id="5"
+        name="西昌市"
+        average="83.25"
+        indicator="68.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="6"
+        name="乐山市"
+        average="60.25"
+        indicator="43.33"
+        level="3"
+        ranking="14" />
+
+    <element
+        id="7"
+        name="自贡市"
+        average="30.25"
+        indicator="87.16"
+        level="4"
+        ranking="14" />
+
+    <element
+        id="8"
+        name="内江市"
+        average="64.25"
+        indicator="67.16"
+        level="2"
+        ranking="14" />
+
+    <element
+        id="9"
+        name="泸州市"
+        average="86.25"
+        indicator="64.16"
+        level="3"
+        ranking="14" />
+
+    <element
+        id="10"
+        name="资阳市"
+        average="36.25"
+        indicator="52.16"
+        level="2"
+        ranking="14" />
+
+    <element
+        id="11"
+        name="遂宁市"
+        average="86.25"
+        indicator="21.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="12"
+        name="南充市"
+        average="23.25"
+        indicator="34.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="13"
+        name="达州市"
+        average="25.25"
+        indicator="62.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="14"
+        name="广安市"
+        average="53.25"
+        indicator="12.16"
+        level="4"
+        ranking="14" />
+
+    <element
+        id="15"
+        name="巴中市"
+        average="64.25"
+        indicator="36.16"
+        level="2"
+        ranking="14" />
+
+    <element
+        id="16"
+        name="广元市"
+        average="34.25"
+        indicator="83.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="17"
+        name="德阳市"
+        average="62.25"
+        indicator="18.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="18"
+        name="绵阳市"
+        average="64.25"
+        indicator="35.16"
+        level="1"
+        ranking="14" />
+
+    <element
+        id="19"
+        name="眉山市"
+        average="64.25"
+        indicator="53.16"
+        level="3"
+        ranking="14" />
+
+    <element
+        id="20"
+        name="雅安市"
+        average="80.25"
+        indicator="27.16"
+        level="4"
+        ranking="14" />
+
+</cityinfo>

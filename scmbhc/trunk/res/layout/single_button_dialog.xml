@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_dialog_bg">
+
+    <include layout="@layout/dialog_title_bar" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dip" > 
+      <TextView
+            android:id="@+id/message_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_1"
+            android:text="@string/latest_version_name"/>
+        
+        <TextView
+            android:id="@+id/message_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_2"
+            android:text="@string/support_version_name"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dip" > 
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_bg"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

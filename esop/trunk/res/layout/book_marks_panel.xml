@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <ListView
+        android:id="@+id/bookmarks_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/chat_history_selector"
+        android:scrollbarStyle="insideInset"
+        android:stackFromBottom="false"
+        android:transcriptMode="alwaysScroll" />
+
+</LinearLayout>

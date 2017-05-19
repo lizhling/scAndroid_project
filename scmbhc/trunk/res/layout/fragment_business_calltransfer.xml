@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_tab"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="呼叫转移业务"
+            android:textColor="@color/selector_tab_white_grey" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_tab"
+            android:button="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/productionInfo"
+            android:textColor="@color/selector_tab_white_grey" />
+    </RadioGroup>
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" >
+
+        <LinearLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_function_panel"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/businessCharge"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView_stateShow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="已开通"
+                        android:textColor="@color/blue" />
+
+                    <Button
+                        android:id="@+id/unsubscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_business_manage"
+                        android:text="@string/unsubscribe"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/businessAlter"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_bt_bg_phonenum"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editText_phoneNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/inputNumberForCallTransferHint"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:minHeight="40px"
+                            android:padding="5dp" >
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/button_addressList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_contacts" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/spinner_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_spinner"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:text="@string/chooseCallTranseferType" />
+
+                <RadioGroup
+                    android:id="@+id/spinner_dropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_spinner_dropdown"
+                    android:visibility="gone" >
+
+                    <RadioButton
+                        style="@style/radiobutton_as_spinneritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="无条件转移" />
+
+                    <RadioButton
+                        style="@style/radiobutton_as_spinneritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="无应答转移" />
+
+                    <RadioButton
+                        style="@style/radiobutton_as_spinneritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="不可及转移" />
+
+                    <RadioButton
+                        style="@style/radiobutton_as_spinneritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="遇忙转移"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        style="@style/radiobutton_as_spinneritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="取消呼叫转移号码"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/commitAlter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_bg_btn"
+                android:text="@string/commitAlter"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bg_detail"
+                android:text="@string/seeDetails"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_function_panel"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_showHtml"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ViewSwitcher>
+
+</LinearLayout>

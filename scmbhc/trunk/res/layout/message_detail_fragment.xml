@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1.0"
+	android:background="@color/white" android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/mms_layout_view_parent"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:layout_weight="1" android:orientation="vertical">
+		<LinearLayout android:layout_width="match_parent"
+		   android:layout_weight="1"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+			<TextView android:id="@+id/message_title_view"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical|center_horizontal" android:textSize="20sp"
+				android:textColor="@color/black" android:text="本月效绩预警" />
+
+			<TextView android:id="@+id/message_date_view"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical|center_horizontal" android:textSize="14sp"
+				android:text="10-9-8" android:textColor="@color/gray"
+				android:layout_marginTop="10dip" />
+			<View 
+			    android:layout_width="match_parent" 
+			    android:layout_height="2dip"
+			    android:layout_marginTop="10dip"
+			    android:background="@drawable/dot_line"
+			    />
+
+			<TextView android:id="@+id/message_text_view"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:layout_gravity="center_vertical" android:textSize="18sp"
+				android:layout_marginTop="10dip" android:text="你好，本月业绩完成进度不理想，请多多努力。" />
+		</LinearLayout>
+		
+		<EditText android:id="@+id/feedback_text"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dip" android:layout_weight="4"
+			android:background="@drawable/login_btn_bg_normal" android:gravity="left|top"
+			android:padding="3dip" android:paddingLeft="5dip" android:singleLine="false"
+			android:drawableRight="@drawable/login_btn_bg_normal" android:textColorHint="@color/blue"
+			android:hint="@string/app_name" android:textSize="16sp" />
+			
+	<LinearLayout android:layout_width="fill_parent"
+	    android:id="@+id/commit_panel"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<Button android:id="@+id/commit" 
+		    android:gravity="center"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:padding="8dip" android:layout_gravity="center"
+			android:background="@drawable/user_login_click" 
+			android:text="@string/confirm"
+			android:textSize="18sp" />
+	</LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1" 
+		android:orientation="vertical"
+		android:id="@+id/feeded_back_panel"
+		android:visibility="gone"
+		android:background="@color/white">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="2dip" android:background="@color/white" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:padding="10dip">
+			<TextView android:id="@+id/message_title_view"
+				android:layout_marginTop="20dip" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:textSize="18sp" android:textColor="@color/blue"
+				android:text="@string/feedback_notice" />
+			<TextView android:id="@+id/feedback_message_text_view"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:textSize="16sp"
+				android:layout_marginLeft="10dip" android:textColor="@color/blue"
+				android:layout_marginTop="10dip" android:text="本月休假半个月，未完成销售业绩;同意扣除本月奖金" />
+
+			<TextView android:id="@+id/feed_back_message_date_view"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:textSize="16sp"
+				android:layout_marginLeft="10dip" android:layout_marginTop="10dip"
+				android:textColor="@color/blue" android:text="20-19-9" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

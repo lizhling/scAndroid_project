@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cy="http://schemas.android.com/apk/res/"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dip"
+     >
+
+    <TextView
+        style="@style/tab_bg_with_shawdow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_reslult"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/block_padding"
+        android:orientation="vertical"
+        android:background="@drawable/bg_function_panel">
+        <TextView
+            android:id="@+id/safety_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/visit_alert"
+            android:textSize="@dimen/text_size_3" 
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/scan_reslut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dip"
+            android:autoLink="web"
+            android:textSize="@dimen/text_size_2"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/visit_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/selector_bg_btn"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/visit_web"
+        android:textSize="@dimen/text_size_1"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+</LinearLayout>

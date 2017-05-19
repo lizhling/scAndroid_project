@@ -1,0 +1,46 @@
+{
+    "datas": [
+        {
+            "id": 20,
+            "zipContent": "file:///android_asset/map/test.html",
+            "tabName": "渠道云图",
+            "lastModify": "20150706185016",
+            "type": 1
+        },
+        {
+            "id": 21,
+            "zipContent": "file:///android_asset/xdb_list/index.html",
+            "tabName": "渠道列表",
+            "lastModify": "20150706185024",
+            "type": 3
+        },
+        {
+            "id": 22,
+            "zipContent": "file:///android_asset/xdb_wdqd/index.html",
+            "tabName": "渠道树",
+            "lastModify": "20150616152122",
+            "type": 0
+        },
+         {
+            "id": 23,
+            "zipContent": "file:///android_asset/xdb_cb/index.html",
+            "tabName": "收藏",
+            "lastModify": "20150616152122",
+            "type": 0
+        },
+         {
+            "id": 24,
+            "zipContent": "file:///android_asset/xdb_scanning/index.html",
+            "tabName": "扫描",
+            "lastModify": "20150616152122",
+            "type": 2
+        },
+        {
+            "id": 25,
+            "zipContent": "file:///android_asset/xdb_cjcx/index.html",
+            "tabName": "酬金",
+            "lastModify": "20150616152122",
+            "type": 4
+        }
+    ]
+}

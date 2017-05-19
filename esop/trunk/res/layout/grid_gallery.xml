@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:orientation="vertical"
+	android:layout_height="wrap_content">
+	<com.starcpt.cmuc.ui.view.HorizontalScrollPanel
+	    android:layout_marginTop="10dip"
+		android:id="@+id/horizontal_scroll_panel" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1.0"/>
+	<LinearLayout android:id="@+id/imglinear"	   
+		android:orientation="horizontal" android:gravity="center_horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" android:layout_marginBottom="10dip"
+		/>
+</LinearLayout>

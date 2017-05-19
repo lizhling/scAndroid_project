@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">移动微营销</string>
+    <string name="latest_version_name">最新版本</string>
+    <string name="support_version_name">支持版本</string>
+    <string name="app_copyright">中国移动通信集团四川有限公司</string>
+
+    <string name="business_deal">业务办理</string>
+    <!-- commonly -->
+    <string name="returntxt">返回</string>
+
+    <!-- network setting -->
+    <string name="set_network">设置网络</string>
+    <string name="network_error">网络错误，请检查网络设置。错误ID=40</string>
+    <string name="frame_loading_fail">数据加载失败，\n请检查当前网络接连或稍后再试!</string>
+    <string name="load_web_fail">页面加载失败，\n请检查当前网络接连或稍后再试!</string>
+    <string name="inputCorrectMobileNumber">请输入正确11位移动手机号码……</string>
+    <string name="inputValidateCode">请输入验证码……</string>
+    <string name="checkValidateSusscess">验证码验证成功……</string>
+    <!-- 升级 -->
+    <string name="update_des">更新内容</string>
+    <string name="update_now">立即更新</string>
+    <string name="later_say">以后再说</string>
+    <string name="find_version_apk">发现新版本</string>
+    <string name="latest_apk_downloading">最新安装程序下载中</string>
+    <string name="apk_download_fail">最新安装程序下载失败，请重试。</string>
+    <string name="background_donwn_apk">后台下载</string>
+    <string name="down_apk_progress">下载进度</string>
+    <string name="down_apk_failed">下载失败，请重试</string>
+    <string name="version_too_low">当前版本太低，请更新到最新版本</string>
+    <string name="down_apk_failed_reStart">下载失败,重新启动app进行更新</string>
+    <string name="exitApp">退出</string>
+    <string name="shareContent">微营销应用app：</string>
+    <string name="defaultDownloadUrl">http://218.205.252.26:28081/scWyxAppManagePlatform/unifiedAppInterface/sendDynamicCode.action</string>
+	<!--  status-->
+    <string name="checking_application_update">正在检查版本更新。。。</string>
+    <string name="checking_support_device_update">正在检查具有外设功能的版本。。。</string>
+    <string name="checking_common_res_update">正在检查公共资源更新。。。</string>
+    <string name="downing_common_res">正在下载公共资源。。。</string>
+    <string name="importing_common_res">正在导入公共资源。。。</string>
+    <string name="logining">正在登录 。。。</string>
+    <string name="getting_data">正在获取数据。。。</string>
+    <string name="completed">已完成。。。</string>
+    <string name="unzip_web">下载完成，正在解析。。。</string>
+    <string name="load_web">解析完成，页面加载中。。。</string>
+    <string name="fit_sichuan_user">(适用于四川移动用户)</string>
+    
+    <!-- name -->
+    <string name="pageTurnUtils">JavascriptObjcets</string>
+    <string name="pageTurnHtmlRegist">function callBusinessPage(phone,msg){ window.JavascriptObjcets.callBusinessPage(phone,msg);}function startShareFunction(description,content){window.JavascriptObjcets.startShareFunction(description,content);}function callBusinessWebPage(url,name,lastModify){window.JavascriptObjcets.callBusinessWebPage(url,name,lastModify);}function getTabInfos(key){window.JavascriptObjcets.getTabInfos(key);}</string>
+</resources>

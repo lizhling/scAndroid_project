@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_f2" >
+
+    <android.support.v4.widget.SlidingPaneLayout
+        android:id="@+id/slidingPane1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#465058"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroupBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#465058" >
+
+                <RadioButton
+                    android:id="@+id/radioButton_channelMap"
+                    style="@style/radioHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/selector_cloud"
+                    android:text="渠道云图" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_channelList"
+                    style="@style/radioHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="常用渠道列表" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_ChannelTree"
+                    style="@style/radioHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="渠道树" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_favorite"
+                    style="@style/radioHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏网点" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@drawable/white_dialog_spilator" />
+
+            <Button
+                android:id="@+id/btn_scan"
+                style="@style/radioHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/selector_sweep"
+                android:text="扫一扫" />
+
+            <Button
+                android:id="@+id/btn_operate"
+                style="@style/radioHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_manage"
+                android:text="设置" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </FrameLayout>
+    </android.support.v4.widget.SlidingPaneLayout>
+
+</LinearLayout>

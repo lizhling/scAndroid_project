@@ -1,0 +1,8 @@
+ <!-- 控件显示 值为0，控件不显示值为4-->
+ <visibilitys>
+	<!-- 登录界面(LoginActivity) -->
+		<!-- 登录界面标题显示 -->
+		<visibility name="login_tob_panel">4</visibility>
+		<!-- 登录界面logo不显示 -->
+    	<visibility name="login_logo_panel">0</visibility>
+</visibilitys>

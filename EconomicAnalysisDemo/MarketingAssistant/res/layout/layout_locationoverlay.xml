@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/block_margin"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/block_padding"
+                android:src="@drawable/selector_search" />
+
+            <ImageView
+                android:id="@+id/btn_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/block_padding"
+                android:src="@drawable/selector_sweep" />
+
+            <ImageView
+                android:id="@+id/btn_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/block_padding"
+                android:paddingTop="@dimen/block_padding"
+                android:src="@drawable/selector_rate" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_myLocation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/bmapView"
+            android:layout_alignLeft="@+id/bmapView"
+            android:layout_marginBottom="@dimen/block_margin30"
+            android:src="@drawable/animation_walking" /> <!-- android:src="@android:drawable/ic_menu_mylocation" -->
+
+
+        <!--
+             <TextView
+            android:id="@+id/btn_trigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/linearLayout01"
+            android:layout_below="@+id/linearLayout01"
+            android:background="@drawable/shape_white_bg"
+            android:padding="@dimen/block_padding"
+            android:text="指标"
+            android:textColor="@color/selector_bt_open_amaranth_white"
+            android:textScaleX="0.6"
+            android:textSize="@dimen/text_size_2"
+            android:textStyle="italic" />
+        -->
+
+        <Spinner
+            android:id="@+id/spinner_lines"
+            style="@style/CustomSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linearLayout01"
+            android:layout_margin="@dimen/block_margin"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_drawer_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/selector_ic_drawer_hide" />
+
+        <Spinner
+            android:id="@+id/spinner_indexsort"
+            style="@style/CustomSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/block_padding5"
+            android:layout_marginLeft="@dimen/block_margin30"
+            android:layout_marginRight="@dimen/block_margin30"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

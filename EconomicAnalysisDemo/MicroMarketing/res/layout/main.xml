@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sunrise.micromarketing.ui.view.CustomTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:tag="CustomTabHost" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.0"
+            android:background="#00ffffff" />
+
+        <com.sunrise.micromarketing.ui.view.MyTab
+            android:id="@+id/bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#286bc5"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</com.sunrise.micromarketing.ui.view.CustomTabHost>

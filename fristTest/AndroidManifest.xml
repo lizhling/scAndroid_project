@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fristtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.App"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+         <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="02Idp4Y9C5gxiFqe4FhtOBqj" />
+        <!-- 正式 02Idp4Y9C5gxiFqe4FhtOBqj -->
+        <!-- 测试 yiWlK30WuN9dG084zUraIdH0 -->
+        <meta-data
+            android:name="isTest"
+            android:value="false" />
+        <meta-data
+            android:name="logShow"
+            android:value="false" />
+        
+        
+        <!-- 正式页面activity -->
+    </application>
+
+</manifest>

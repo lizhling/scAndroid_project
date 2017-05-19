@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/content"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:textColor="@color/text_color_gray"
+   android:textSize="@dimen/text_size_2" 
+   android:drawableRight="@drawable/arrow_down"
+   android:drawablePadding="5dip"
+   android:gravity="center"
+   android:paddingLeft="8dip"
+   android:paddingRight="8dip"
+   android:background="@drawable/my_spinner"
+   />

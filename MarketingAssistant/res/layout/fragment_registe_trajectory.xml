@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 渠道轨迹 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/block_margin"
+        android:background="@drawable/corners_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/block_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/block_padding"
+                        android:singleLine="true"
+                        android:text="开始时间"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <TextView
+                        android:id="@+id/textView_startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_style"
+                        android:drawableRight="@drawable/selector_arrow_down"
+                        android:gravity="center"
+                        android:padding="@dimen/block_padding"
+                        android:singleLine="true"
+                        android:text="2015-12-7 17:47"
+                        android:textSize="@dimen/text_size_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/block_padding5"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/block_padding"
+                        android:singleLine="true"
+                        android:text="结束时间"
+                        android:textSize="@dimen/text_size_2" />
+
+                    <TextView
+                        android:id="@+id/textView_endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_style"
+                        android:drawableRight="@drawable/selector_arrow_down"
+                        android:gravity="center"
+                        android:padding="@dimen/block_padding"
+                        android:singleLine="true"
+                        android:text="2015-12-7 17:48"
+                        android:textSize="@dimen/text_size_2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/block_margin"
+                android:padding="@dimen/block_padding5"
+                android:src="@drawable/selector_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/block_margin" >
+
+        <ListView
+            android:id="@+id/listView_registe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/block_margin"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView_noContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/block_padding"
+            android:singleLine="true"
+            android:text="@string/noCotent"
+            android:textSize="@dimen/text_size_2" />
+    </FrameLayout>
+
+</LinearLayout>

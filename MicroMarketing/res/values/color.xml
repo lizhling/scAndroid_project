@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="goldyellow">#ffF6FF0A</color>
+    <color name="orange">#ffea8b0d</color>
+    <color name="darkred">#ffc51b0e</color>
+    <color name="darkblue">#ff128ba8</color>
+    <color name="darkyellow">#fff7e03c</color>
+
+    <color name="light_blue_listselector">#DAF5FF</color>
+    
+    <!-- 亮色字体颜色。灰白色 -->
+    <color name="text_color_light">#ffD7D7D7</color>
+    <color name="text_color_shadow">#88000000</color>
+    <color name="dialog_button_bg_selected">#d9d9d9</color>
+    <color name="white_dialog_spilator">#bbbbbb</color>
+
+</resources>

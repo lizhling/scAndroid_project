@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:id="@+id/update_page_progress_panel"
+	 android:background="@color/white"
+	 android:layout_width="fill_parent" 
+	 android:layout_height="fill_parent" 
+	 android:padding="2dip"
+	 android:visibility="gone"
+	 >
+	<ProgressBar
+	android:id="@+id/update_page_progress"
+	style="?android:attr/progressBarStyleLarge" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:max="100"
+	android:progress="50" android:secondaryProgress="70"	
+	android:indeterminateDrawable="@drawable/progressbar"	
+	android:layout_centerInParent="true" />
+	<LinearLayout android:id="@+id/load_page_failed" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true" 
+	android:orientation="vertical"
+	>
+	<TextView 
+	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	android:gravity="center_horizontal"
+	android:layout_gravity="center_horizontal"
+	android:textSize="20sp" android:textColor="@color/darkgray"  
+	android:text="@string/frame_loading_fail"/>
+	<Button android:id="@+id/re_get_data"
+	android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/re_try"
+	android:layout_gravity="center_horizontal" android:background="@drawable/green_button_bg"
+	android:textSize="20sp"
+	android:layout_marginTop="10dip"
+	android:paddingTop="2dip"
+	android:paddingBottom="2dip"
+	android:paddingLeft="15dip"
+	android:paddingRight="15dip"
+	/>
+	</LinearLayout>
+	
+ </RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="two_btn_dialog_width">270dip</dimen>
+    <dimen name="login_app_logo_margin_top">80dip</dimen>
+    <dimen name="app_name_size">24sp</dimen>
+    <dimen name="app_name_margin_top">20dip</dimen>
+    <dimen name="login_box_margin_top">40dip</dimen>
+    <dimen name="login_box_row_margin_top">6dip</dimen>
+    <dimen name="login_box_btn_margin_top">12dip</dimen>
+    <dimen name="login_box_row_text_size">16sp</dimen>
+    <dimen name="login_box_btn_text_size">18sp</dimen>
+    <dimen name="gridview_horizontalSpacing">10dip</dimen>
+    <dimen name="user_login_btn_margin">10dip</dimen>
+    <dimen name="oper_login_splash_margin_top">40dip</dimen>
+    <dimen name="user_login_splash_margin_top">100dip</dimen>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sliding_menu_bg_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sliding_menu_bg_color"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_bg"
+                android:orientation="vertical" >
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_user_name_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_user_name" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_user_name"
+                        style="@style/sliding_menu_item_text_value"
+                        android:text="张三" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_user_name_bt"
+                        style="@style/sliding_menu_item_text_bt"
+                        android:background="@drawable/selector_normal_red_click_blue"
+                        android:drawableLeft="@drawable/icon_sliding_menu_logout"
+                        android:text="@string/logout"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_phone_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_phone" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_phone"
+                        style="@style/sliding_menu_item_text_value" />
+
+                    <TextView
+                        style="@style/sliding_menu_item_text_bt"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" 
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_creditRating" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_credits_level"
+                        style="@style/sliding_menu_item_text_value" />
+
+                     <TextView
+                        android:id="@+id/home_sliding_menu_credits_level_help"
+                        style="@style/sliding_menu_item_text_bt"
+                        android:background="@drawable/selector_bg_business_del"
+                        android:text="@string/details"
+                        android:textColor="@color/selector_sliding_menu_text_red" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_brand_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_brand" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_brand"
+                        style="@style/sliding_menu_item_text_value"
+                        android:text="全球通" />
+
+                    <TextView
+                        style="@style/sliding_menu_item_text_bt"
+                        android:visibility="invisible" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_monthly_consumption_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_the_monthly_consumption" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_monthly_consumption"
+                        style="@style/sliding_menu_item_text_value_no_bt"
+                        android:text="120" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_monthly_consumption_bt"
+                        style="@style/sliding_menu_item_text_bt"
+                        android:background="@drawable/selector_bg_business_open"
+                        android:drawableLeft="@drawable/selector_icon_sliding_menu_consumption"
+                        android:text="@string/sliding_menu_check_the_price"
+                        android:textColor="@color/selector_sliding_menu_text_yellow_green"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/sliding_menu_item_panel_style"
+                    android:paddingTop="0dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="公共账户消费：" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_public_monthly_consumption"
+                        style="@style/sliding_menu_item_text_value_no_bt" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_main_tariff_packages_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_main_tariff_packages" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_main_tariff_packages"
+                        style="@style/sliding_menu_item_text_value_no_bt"
+                        android:text="全球通(88)" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_main_tariff_packages_bt"
+                        style="@style/sliding_menu_item_text_bt"
+                        android:background="@drawable/selector_bg_business_detail"
+                        android:drawableLeft="@drawable/selector_icon_sliding_menu_bill"
+                        android:text="@string/sliding_menu_real_time_billing"
+                        android:textColor="@color/selector_sliding_menu_text_yellow_green"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/bg_color_gray" />
+
+                <TableRow style="@style/sliding_menu_item_panel_style" >
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_account_balance_label"
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="@string/sliding_menu_account_balance" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_account_balance"
+                        style="@style/sliding_menu_item_text_value" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_account_balance_bt"
+                        style="@style/sliding_menu_item_text_bt"
+                        android:background="@drawable/selector_bg_business_del"
+                        android:drawableLeft="@drawable/selector_icon_sliding_menu_recharge"
+                        android:text="@string/sliding_menu_recharge"
+                        android:textColor="@color/selector_sliding_menu_text_red" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/sliding_menu_item_panel_style"
+                    android:paddingTop="0dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/sliding_menu_item_text_label"
+                        android:text="公共账户余额：" />
+
+                    <TextView
+                        android:id="@+id/home_sliding_menu_public_account_balance"
+                        style="@style/sliding_menu_item_text_value_no_bt" />
+                </TableRow>
+            </TableLayout>
+
+            <ListView
+                android:id="@+id/listview_usedConditon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_bg"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:listSelector="@android:color/transparent"
+                android:padding="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <View
+                android:layout_width="5dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/list_shadow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

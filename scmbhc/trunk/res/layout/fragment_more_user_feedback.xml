@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_businesslist"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/tab_bg_with_shawdow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/userfeedback"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_list_bg"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/feedback_notice"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/spinner_feedback_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@drawable/bg_spinner"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/arrow_down"
+                android:text="不好看" />
+
+            <RadioGroup
+                android:id="@+id/spinner_dropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_feedback_type"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/spinner_feedback_type"
+                android:background="@drawable/bg_spinner_dropdown"
+                android:visibility="gone" >
+
+                <RadioButton
+                    style="@style/radiobutton_as_spinneritem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="查不了" />
+
+                <RadioButton
+                    style="@style/radiobutton_as_spinneritem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="办不上" />
+
+                <RadioButton
+                    style="@style/radiobutton_as_spinneritem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="登不上" />
+
+                <RadioButton
+                    style="@style/radiobutton_as_spinneritem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="真不错"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/spinner_feedback_type"
+                android:layout_alignBottom="@+id/spinner_feedback_type"
+                android:layout_alignParentLeft="true"
+                android:text="@string/feedback_type"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/contack_way"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+86"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/editText_contack_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/inputMobileNumber"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:nextFocusDown="@+id/editText_feedback_content"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/feedback_content_in_140w"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="top|left"
+            android:hint="@string/inputText"
+            android:maxLength="140"
+            android:minLines="6" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_bg_btn"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

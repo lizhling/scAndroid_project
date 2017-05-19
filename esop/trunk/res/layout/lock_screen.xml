@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/two_button_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+       <include
+        layout="@layout/dialog_title_bar" />
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dip" >
+        <TextView
+            android:id="@+id/password_input_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_your_secure_password"
+            android:layout_marginBottom="10dip"
+            android:textSize="@dimen/login_box_row_text_size"
+            android:textColor="@color/black" />
+         <EditText
+            android:id="@+id/secure_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input"
+            android:drawableRight="@drawable/password_icon"
+            android:gravity="left|center"
+            android:padding="8dip"
+            android:password="true"
+            android:saveEnabled="true"
+            android:singleLine="true"
+            android:textColor="@color/login_text"
+            android:textSize="@dimen/login_box_row_text_size"/>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splitView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_split" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/green_button_bg"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/cancle_pair" android:id="@+id/cancle_pair"></item>
+    <item android:title="@string/send_file" android:id="@+id/send_file"></item>
+    
+</menu>
