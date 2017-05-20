@@ -115,6 +115,6 @@ public interface ExtraKeyConstant {
 	String KEY_MY_LOCATION_LONGITUDE = "key_my_location_longitude";
 	String KEY_CITY = "key_city";
 	String KEY_SHARE_OF_CHANNEL_ALL_CITYS = "key_share_of_channel_all_citys";
-	String KEY_SHARE_OF_CHANNEL_ALL_CITYS1 = "key_share_of_channel_all_citys1";
+	String KEY_SHARE_OF_CHANNEL_ALL_CITYS1 = "key_share_of_channel_all_citys2";
 }
 
